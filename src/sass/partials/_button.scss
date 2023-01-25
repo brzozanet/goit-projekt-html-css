@@ -1,0 +1,22 @@
+.wide-btn {
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  &--red {
+    background-color: #d41443;
+    color: #fff;
+  }
+  &--white {
+    background-color: #fff;
+    color: #d41443;
+  }
+}
+.round-btn {
+  border: none;
+  content: '';
+  background: url(../images/arrow-right.png);
+  width: 40px;
+  height: 40px;
+}

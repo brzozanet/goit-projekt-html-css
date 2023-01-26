@@ -1,0 +1,105 @@
+.footer {
+  //   background-color: var(--color-grey3);
+  width: 100%;
+
+  &__firstArea {
+    font-family: $headerFont;
+    display: flex;
+  }
+
+  &__firstAreaTitle {
+    font-size: 1.125rem; //can insert variable instead
+    line-height: 1.16;
+    text-transform: uppercase;
+    color: $primaryColorRose;
+  }
+
+  &__firstAreaSubtitle {
+    font-size: 2.125rem; //can insert variable instead
+    line-height: 1.15;
+    text-transform: uppercase;
+    color: $primaryColorRed;
+  }
+
+  // &__secondAreaDiv {
+  //   // padding: 3.75rem 0;
+  //   // display: flex;
+  //   // flex-direction: column;
+  //   // align-items: center;
+  //   // // color: var(--color-white);
+  //   // color: #907e82;
+  //   // text-decoration: none;
+  // }
+
+  &__secondArea {
+    width: 100%;
+  }
+
+  &__secondAreaDiv2 {
+    color: #907e82;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__firstAreaTitleArea {
+    padding-left: 1.25rem;
+    max-width: 14.625rem;
+  }
+
+  .footer__firstAreaTitle {
+    padding-left: 0.125rem;
+  }
+
+  .footer__secondAreaDiv {
+    max-width: 9.375rem;
+    padding-top: 1.375rem;
+    // padding-left: 4.9375rem;
+    margin: auto;
+    padding-bottom: 1.5625rem;
+  }
+
+  .footer__secondAreaDiv2 {
+    max-width: 9.375rem;
+    // padding-top: 1.375rem;
+    // padding-left: 4.9375rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer__firstAreaTitleArea {
+    padding-left: 7.125rem;
+    max-width: 21.25rem;
+  }
+
+  .footer__secondAreaDiv {
+    display: flex;
+    // flex-direction: column;
+  }
+
+  .footer__secondAreaDiv2 {
+    // max-width: 9.375rem;
+    padding-top: 1.8125rem;
+    margin: auto;
+    // padding-left: 4.9375rem;
+    // padding-bottom: 1.5625rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__firstAreaTitleArea {
+    padding-left: 7.125rem;
+    max-width: 29.625rem;
+  }
+
+  .footer__secondAreaDiv {
+    display: flex;
+    // flex-direction: column;
+  }
+
+  .footer__secondAreaDiv2 {
+    // max-width: 9.375rem;
+    padding-top: 1.8125rem;
+    margin: auto;
+    // padding-left: 4.9375rem;
+    // padding-bottom: 1.5625rem;
+  }
+}

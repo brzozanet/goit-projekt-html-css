@@ -1,13 +1,31 @@
 .contacts {
+  background-color: $backgroundCOlorLight;
   &__container {
   }
   &__title {
+    display: none;
   }
   &__item {
   }
   &__card {
+    max-width: 220px;
+    margin: 0 auto;
+    background-color: $whiteColor;
+    border-radius: $buttonBorderRadius;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    padding: 43px 21px 43px 20px;
   }
   &__name {
+    width: 80px;
+    height: 16px;
+    background-color: $secondaryColorCoffee;
+    @include flexcenter;
+    border-radius: 4px;
+    margin-bottom: 25px;
+  }
+  &__name--foodtruck {
+    background-color: $cecondaryColorPistachio;
+    width: 130px;
   }
   &__city {
   }

@@ -29,6 +29,39 @@
   background-position: center;
 }
 
+/* BRAND COLORS */
+/* FONTS */
+/* BREAKPONTS */
+/* TRANSITIONS */
+/* OTHER */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: "DM Sans";
+  color: #000;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 110px;
+}
+
+.list {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .wide-btn {
   border-radius: 20px;
   border: none;
@@ -51,4 +84,103 @@
   background: url(../images/arrow-right.png);
   width: 40px;
   height: 40px;
+}
+
+.contacts {
+  background-color: #fff5f6;
+}
+.contacts__title {
+  display: none;
+}
+.contacts__card {
+  max-width: 220px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  padding: 43px 21px 43px 20px;
+}
+.contacts__name {
+  width: 80px;
+  height: 16px;
+  background-color: #f0d1a5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+.contacts__name--foodtruck {
+  background-color: #c2e297;
+  width: 130px;
+}
+.footer {
+  width: 100%;
+}
+.footer__firstArea {
+  font-family: "Titan One";
+  display: flex;
+}
+.footer__firstAreaTitle {
+  font-size: 1.125rem;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+.footer__firstAreaSubtitle {
+  font-size: 2.125rem;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: #d41443;
+}
+.footer__secondArea {
+  width: 100%;
+}
+.footer__secondAreaDiv2 {
+  color: #907e82;
+}
+
+@media (max-width: 767px) {
+  .footer__firstAreaTitleArea {
+    padding-left: 1.25rem;
+    max-width: 14.625rem;
+  }
+  .footer__firstAreaTitle {
+    padding-left: 0.125rem;
+  }
+  .footer__secondAreaDiv {
+    max-width: 9.375rem;
+    padding-top: 1.375rem;
+    margin: auto;
+    padding-bottom: 1.5625rem;
+  }
+  .footer__secondAreaDiv2 {
+    max-width: 9.375rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer__firstAreaTitleArea {
+    padding-left: 7.125rem;
+    max-width: 21.25rem;
+  }
+  .footer__secondAreaDiv {
+    display: flex;
+  }
+  .footer__secondAreaDiv2 {
+    padding-top: 1.8125rem;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__firstAreaTitleArea {
+    padding-left: 7.125rem;
+    max-width: 29.625rem;
+  }
+  .footer__secondAreaDiv {
+    display: flex;
+  }
+  .footer__secondAreaDiv2 {
+    padding-top: 1.8125rem;
+    margin: auto;
+  }
 }/*# sourceMappingURL=main.css.map */

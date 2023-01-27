@@ -1,11 +1,3 @@
-body {
-  padding: 0;
-  margin: 0, auto;
-}
-ul {
-  list-style-type: none;
-  padding-inline-start: 0;
-}
 .products {
   padding-top: 121px;
   &__headers {
@@ -17,21 +9,21 @@ ul {
 
     &-first {
       text-decoration: none;
-      font-family: 'Titan One';
+      font-family: $headerFont;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 1.16;
-      color: #ffa5ba;
+      color: $primaryColorRose;
     }
     &-second {
-      font-family: 'Titan One';
+      font-family: $headerFont;
       font-style: normal;
       font-weight: 400;
       font-size: 34px;
       line-height: 1.14;
       letter-spacing: 0.04em;
-      color: #d41443;
+      color: $primaryColorRed;
       padding-bottom: 144px;
     }
   }
@@ -63,10 +55,10 @@ ul {
       transform: translateY(-100%);
     }
     &-item:first-child {
-      background: #ffb8ca;
+      background: $secondaryColorStrawberry;
     }
     &-item:nth-child(2) {
-      background: #f0d1a5;
+      background: $secondaryColorCoffee;
     }
     &-item:nth-child(2):before {
       content: '';
@@ -81,7 +73,7 @@ ul {
       transform: translateY(-100%);
     }
     &-item:nth-child(3) {
-      background: #c2e297;
+      background: $secondaryColorPistachio;
     }
     &-item:nth-child(3):before {
       content: '';
@@ -96,7 +88,7 @@ ul {
       transform: translateY(-100%);
     }
     &-item-header {
-      font-family: 'Titan One';
+      font-family: $headerFont;
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
@@ -107,7 +99,7 @@ ul {
       color: #ffffff;
     }
     &-item-desc {
-      font-family: 'DM Sans';
+      font-family: $paragraphFont;
       font-style: normal;
       font-weight: 700;
       font-size: 14px;
@@ -120,7 +112,7 @@ ul {
     }
     &-dot-element {
       border-radius: 50%;
-      background-color: #fff;
+      background-color: $whiteColor;
       width: 6px;
       height: 6px;
       display: inline-block;
@@ -128,5 +120,7 @@ ul {
   }
 }
 .round-btn {
+  @extend %round-btn;
+  margin-top: 30px;
   margin-bottom: 40px;
 }

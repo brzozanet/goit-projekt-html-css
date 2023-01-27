@@ -46,9 +46,99 @@
 }
 
 .round-btn {
+  padding: 0;
   border: none;
   content: "";
   background: url(../images/arrow-right.png);
   width: 40px;
   height: 40px;
+}
+
+body {
+  padding: 0;
+  margin: 0, auto;
+}
+
+ul {
+  list-style-type: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.products {
+  padding-top: 121px;
+}
+.products__headers {
+  text-transform: uppercase;
+  text-align: center;
+}
+.products__headers-first {
+  text-decoration: none;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  color: #ffa5ba;
+}
+.products__headers-second {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  color: #d41443;
+}
+.products__list {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.products__list-item {
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products__list-item:first-child {
+  background: #ffb8ca;
+}
+.products__list-item:nth-child(2) {
+  background: #f0d1a5;
+}
+.products__list-item:nth-child(3) {
+  background: #c2e297;
+}
+.products__list-item-header {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.products__list-item-desc {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  padding: 0 39px 0 41px;
+}
+
+.products__list-dot-element {
+  border-radius: 50%;
+  background-color: #fff;
+  width: 6px;
+  height: 6px;
+  display: inline-block;
 }/*# sourceMappingURL=main.css.map */

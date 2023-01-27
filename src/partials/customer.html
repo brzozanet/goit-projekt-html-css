@@ -1,37 +1,45 @@
-<section>
-  <div>
-    <div>
-      <img src="images/testimonials1.jpg" alt="Girl1" width="85" height="85" />
+<section class="customer">
+  <div class="container">
+    <div class="customer__image">
+      <img
+        src="images/testimonials1.jpg"
+        srcset="images/testimonials1@2x.jpg 2x"
+        alt="Girl1"
+        width="85"
+        height="85"
+      />
     </div>
-    <div>
-        <svg width="54" height="40">
-            <use href="icons/dash.svg#dash"></use>
-        </svg>
-      <p>
+    <div class="customer__description">
+      <svg class="customer__icon-dash" width="54" height="40">
+        <use href="icons/dash.svg#dash"></use>
+      </svg>
+      <p class="customer__name">
         Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
         nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
       </p>
-      <div>
-        <ul>
+    </div>
+    <div class="customer__label">
+      <svg class="customer__icon-dots" width="32" height="4">
+        <use href="icons/dots.svg#dots"></use>
+      </svg>
+      <!-- <ul class="list">
           <li>o</li>
           <li>o</li>
           <li>o</li>
-        </ul>
-        <h2>Emily, Los Angeles</h2>
-        <div>
-          <ul class="pagination">
-            <li>
-              <a href="#">
-                <svg class="" width="13" height="12">
-                    <use href="icons/home1.svg#home1">
-                    </use></svg
-              >
+        </ul> -->
+      <h2 class="customer__title">Emily, Los Angeles</h2>
+      <div class="customer__pagination">
+        <ul class="pagination customer__list">
+          <li class="customer__item">
+            <a href="#">
+              <svg class="" width="13" height="12">
+                <use href="icons/home1.svg#home1"></use>
+              </svg>
             </a>
-            </li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-          </ul>
-        </div>
+          </li>
+          <li class="customer__item"><a href="#">2</a></li>
+          <li class="customer__item"><a href="#">3</a></li>
+        </ul>
       </div>
     </div>
   </div>

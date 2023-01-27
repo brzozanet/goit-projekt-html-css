@@ -1,20 +1,65 @@
+@import '../utils/vars';
+@import '../utils/globals';
 
-
-
-
-
-
-ul.pagination {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
+.customer {
+  &__image {
+    display: flex;
+    justify-content: center;
+    width: 85px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 29px;
+  }
+  &__description {
+    width: auto;
+    position: relative;
+    background-color: #fafafa;
+  }
+  &__icon-dash {
+    position: absolute;
+    left: 61px;
+    top: 28px;
+  }
+  &__name {
+    position: relative;
+    padding: 43px 65px 26px 65px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 32px;
+    text-align: center;
+    text-underline-offset: 6px;
+    text-decoration: underline;
+    text-decoration-color: red;
+  }
+  &__icon-dots {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+    text-align: center;
+  }
 }
 
-ul.pagination li {display: inline;}
+ul.pagination {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+ul.pagination li {
+  display: inline;
+}
 
 ul.pagination li a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
 }

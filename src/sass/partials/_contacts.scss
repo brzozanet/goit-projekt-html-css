@@ -62,15 +62,15 @@
     margin-bottom: 25px;
     font-size: 0.75rem;
     line-height: 1.125rem;
-    color: $descText;
+    color: $descTextColor;
   }
 
   &__schedule {
     margin-bottom: 25px;
     padding-top: 25px;
     padding-bottom: 25px;
-    border-bottom: 1px solid $border;
-    border-top: 1px solid $border;
+    border-bottom: 1px solid $borderColor;
+    border-top: 1px solid $borderColor;
   }
 
   &__schedule-item {
@@ -100,13 +100,13 @@
   &__mail {
     font-size: 0.75rem;
     line-height: 1, 125rem;
-    color: $descText;
+    color: $descTextColor;
   }
 
   &__tel {
     font-size: 0.75rem;
     line-height: 1, 125rem;
-    color: $descText;
+    color: $descTextColor;
   }
 
   &__tel:hover,
@@ -124,6 +124,7 @@
     @include flexcenter;
     flex-direction: column;
     gap: 10px;
+    padding-bottom: 113px;
   }
 
   &__btn-item {
@@ -132,10 +133,20 @@
   &__btn-location {
     @extend %wide-btn;
     @extend %wide-btn--red;
+    width: 161px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.3125rem;
   }
 
   &__btn-franschise {
     @extend %wide-btn;
     @extend %wide-btn--white;
+    width: 161px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.3125rem;
   }
 }

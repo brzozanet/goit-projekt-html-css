@@ -1,16 +1,15 @@
 %wide-btn {
   border-radius: 20px;
   border: none;
-  display: flex;
-  align-items: center;
+  @include flexcenter;
   text-align: center;
   &--red {
-    background-color: #d41443;
-    color: #fff;
+    background-color: $primaryColorRed;
+    color: $whiteColor;
   }
   &--white {
-    background-color: #fff;
-    color: #d41443;
+    background-color: $whiteColor;
+    color: $primaryColorRed;
   }
 }
 %round-btn {

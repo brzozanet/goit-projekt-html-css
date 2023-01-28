@@ -140,6 +140,8 @@
     font-size: 1rem;
     line-height: 1.3125rem;
     cursor: pointer;
+    display: flex;
+    align-content: center;
   }
 
   &__btn-franschise {
@@ -151,6 +153,8 @@
     font-size: 1rem;
     line-height: 1.3125rem;
     cursor: pointer;
+    display: flex;
+    align-content: center;
   }
 
   &__btn-location:hover,
@@ -169,7 +173,21 @@
     transition-duration: $transitionDurationDefault;
     transition-timing-function: $transitionTimingDefault;
   }
+  &__icon-location {
+    fill: none;
+    stroke: $whiteColor;
+    margin-left: 8px;
+  }
+  &__icon-franchise {
+    stroke: $primaryColorRed;
+    fill: none;
+    margin-left: 8px;
+  }
 }
+
+//
+// media
+//
 
 @media (min-width: $breakpointTabletStart) {
   .contacts {
@@ -254,6 +272,12 @@
 
     &__btn-franschise {
       width: 174px;
+    }
+    &__icon-location {
+      margin-left: 13.5px;
+    }
+    &__icon-franchise {
+      margin-left: 13.5px;
     }
   }
 }

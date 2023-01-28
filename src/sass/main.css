@@ -1,35 +1,3 @@
-@charset "UTF-8";
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
-/* .example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
-}
-
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
-}
-
-.example .background {
-  height: 240px;
-  background-image: url('../images/example.jpg');
-  background-size: cover;
-  background-position: center;
-} */
-
 /* BRAND COLORS */
 /* FONTS */
 /* BREAKPONTS */
@@ -42,7 +10,7 @@
 
 body {
   background-color: #fff;
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   color: #000;
 }
 
@@ -50,7 +18,7 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  padding: 0 110px;
+  padding: 0 20px;
 }
 
 .list {
@@ -63,35 +31,44 @@ img {
   height: auto;
 }
 
-.wide-btn {
+a {
+  text-decoration: none;
+}
+
+.contacts__btn-franschise, .contacts__btn-location {
   border-radius: 20px;
   border: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
-.wide-btn--red {
+.contacts__btn-location {
   background-color: #d41443;
   color: #fff;
 }
-.wide-btn--white {
+.contacts__btn-franschise {
   background-color: #fff;
   color: #d41443;
 }
 
-.round-btn {
-  border: none;
-  content: '';
-  background: url(../images/arrow-right.png);
-  width: 40px;
-  height: 40px;
-}
-
 .contacts {
-  background-color: #fff5f6;
+  font-family: "DM Sans";
+  font-weight: 500;
+  background-image: linear-gradient(#fff 84px, #fff5f6 84px);
+}
+.contacts__container {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .contacts__title {
   display: none;
+}
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 54px;
 }
 .contacts__card {
   max-width: 220px;
@@ -100,6 +77,9 @@ img {
   border-radius: 24px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   padding: 43px 21px 43px 20px;
+  transition-property: scale;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts__name {
   width: 80px;
@@ -110,14 +90,90 @@ img {
   justify-content: center;
   border-radius: 4px;
   margin-bottom: 25px;
+  font-size: 0.75rem;
+  line-height: 1.375rem;
+  letter-spacing: 0.04em;
+  color: #fff;
 }
 .contacts__name--foodtruck {
   background-color: #c2e297;
   width: 130px;
 }
+.contacts__city {
+  margin-bottom: 10px;
+  font-size: 0.75rem;
+  line-height: 1.375rem;
+  letter-spacing: 0.04em;
+  color: #000;
+}
+.contacts__description {
+  margin-bottom: 25px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: #907e82;
+}
+.contacts__schedule {
+  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+}
+.contacts__schedule-item:first-child {
+  margin-bottom: 10px;
+}
+.contacts__schedule-day {
+  font-size: 0.75rem;
+  line-height: 1.375rem;
+}
+.contacts__schedule-hour {
+  font-size: 0.75rem;
+  line-height: 1.375rem;
+  color: #ffa5ba;
+}
+.contacts__mail {
+  font-size: 0.75rem;
+  line-height: 1, 125rem;
+  color: #907e82;
+}
+.contacts__tel {
+  font-size: 0.75rem;
+  line-height: 1, 125rem;
+  color: #907e82;
+}
+.contacts__tel:hover, .contacts__mail:hover, .contacts__tel:focus, .contacts__mail:focus {
+  color: #c7133e;
+}
+.contacts__card:hover {
+  scale: 1.05;
+}
+.contacts__btn-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 113px;
+}
+.contacts__btn-location {
+  width: 161px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+}
+.contacts__btn-franschise {
+  width: 161px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+}
+
 .footer {
   width: 100%;
   margin: auto;
+  background-color: #fff5f6;
 }
 .footer__firstArea {
   margin: auto;
@@ -126,12 +182,12 @@ img {
   justify-content: space-between;
 }
 .footer__firstAreaTitleArea {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   min-width: 14.625rem;
 }
 .footer__firstAreaTitle {
   font-size: 1.125rem;
-  line-height: 1.16;
+  line-height: 1.15;
   text-transform: uppercase;
   color: #ffa5ba;
   padding-bottom: 1rem;
@@ -160,8 +216,7 @@ img {
   border-radius: 50%;
   transition: 250ms;
 }
-.footer__socialsSubArea:hover,
-.footer__socialsSubArea:focus {
+.footer__socialsSubArea:hover {
   background-color: #d41443;
 }
 .footer__iconArea {
@@ -174,6 +229,9 @@ img {
 .footer__icon {
   color: #fff;
   fill: currentColor;
+}
+.footer__icon--padding {
+  padding-right: 0.1rem;
 }
 .footer__ContactInfo {
   padding-top: 3rem;
@@ -281,4 +339,4 @@ img {
     margin: auto;
     line-height: 1.86;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

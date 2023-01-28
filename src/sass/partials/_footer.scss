@@ -67,6 +67,9 @@
   &__icon {
     color: $whiteColor;
     fill: currentColor;
+    &--padding {
+      padding-right: 0.1rem;
+    }
   }
 
   &__ContactInfo {

@@ -1,6 +1,7 @@
 .footer {
   width: 100%;
   margin: auto;
+  background-color: $backgroundCOlorLight;
 
   &__firstArea {
     margin: auto;
@@ -16,7 +17,7 @@
 
   &__firstAreaTitle {
     font-size: 1.125rem;
-    line-height: 1.16;
+    line-height: 1.15;
     text-transform: uppercase;
     color: $primaryColorRose;
     padding-bottom: 1rem;
@@ -50,8 +51,7 @@
     border-radius: 50%;
     transition: $transitionDurationDefault;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: $primaryColorRed;
     }
   }
@@ -67,6 +67,9 @@
   &__icon {
     color: $whiteColor;
     fill: currentColor;
+    &--padding {
+      padding-right: 0.1rem;
+    }
   }
 
   &__ContactInfo {

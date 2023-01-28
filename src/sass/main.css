@@ -181,6 +181,7 @@ a {
 .footer {
   width: 100%;
   margin: auto;
+  background-color: #fff5f6;
 }
 .footer__firstArea {
   margin: auto;
@@ -194,7 +195,7 @@ a {
 }
 .footer__firstAreaTitle {
   font-size: 1.125rem;
-  line-height: 1.16;
+  line-height: 1.15;
   text-transform: uppercase;
   color: #ffa5ba;
   padding-bottom: 1rem;
@@ -236,6 +237,9 @@ a {
 .footer__icon {
   color: #fff;
   fill: currentColor;
+}
+.footer__icon--padding {
+  padding-right: 0.1rem;
 }
 .footer__ContactInfo {
   padding-top: 3rem;
@@ -463,4 +467,3 @@ a {
 
 .round-btn {
   margin-bottom: 40px;
-}/*# sourceMappingURL=main.css.map */

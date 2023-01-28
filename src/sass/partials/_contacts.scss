@@ -1,7 +1,7 @@
 .contacts {
   font-family: $paragraphFont;
   font-weight: 500;
-  background-image: linear-gradient($whiteColor 84px, $backgroundCOlorLight 84px);
+  background-image: linear-gradient($whiteColor 84px, $backgroundColorLight 84px);
 
   &__container {
     padding-left: 20px;
@@ -191,7 +191,7 @@
 
 @media (min-width: $breakpointTabletStart) {
   .contacts {
-    background-image: linear-gradient($whiteColor 78px, $backgroundCOlorLight 78px);
+    background-image: linear-gradient($whiteColor 78px, $backgroundColorLight 78px);
 
     &__list {
       width: 768px;
@@ -285,7 +285,7 @@
 @media (min-width: $breakpointDesktopStart) {
   .contacts {
     background-image: url(../images/sectionbg2-1x.png),
-      linear-gradient($whiteColor 102px, $backgroundCOlorLight 102px);
+      linear-gradient($whiteColor 102px, $backgroundColorLight 102px);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -294,7 +294,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/sectionbg2-2x.png),
-        linear-gradient($whiteColor 102px, $backgroundCOlorLight 102px);
+        linear-gradient($whiteColor 102px, $backgroundColorLight 102px);
     }
     &__container {
     }

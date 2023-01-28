@@ -52,82 +52,82 @@
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../icons/bucket2@2x.png');
       }
+    }
+    &:nth-child(3)::before {
+      content: '';
+      display: block;
+      width: 44px;
+      height: 50px;
+      background-size: cover;
+      margin-bottom: 16px;
+      background-image: url('../icons/lolly.png');
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../icons/lolly@2x.png');
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpointTabletStart) {
+  .advantages {
+    padding: 66px 36px;
+
+    &__list {
+      gap: 60px;
+    }
+    &__item {
+      width: calc((100% - 120px) / 3);
+      gap: 60px;
+      &:nth-child(1)::before {
+        margin-bottom: 36px;
+      }
+      &:nth-child(2)::before {
+        margin-bottom: 36px;
+      }
       &:nth-child(3)::before {
-        content: '';
-        display: block;
-        width: 44px;
-        height: 50px;
-        background-size: cover;
-        margin-bottom: 16px;
-        background-image: url('../icons/lolly.png');
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-          background-image: url('../icons/lolly@2x.png');
-        }
+        margin-bottom: 36px;
       }
     }
-  }
-
-  @media screen and (min-width: $breakpointTabletStart) {
-    .advantages {
-      padding: 66px 36px;
-
-      &__list {
-        gap: 60px;
-      }
-      &__item {
-        width: calc((100% - 120px) / 3);
-        gap: 60px;
-        &:nth-child(1)::before {
-          margin-bottom: 36px;
-        }
-        &:nth-child(2)::before {
-          margin-bottom: 36px;
-        }
-        &:nth-child(3)::before {
-          margin-bottom: 36px;
-        }
-      }
-      &__title {
-        font-size: 48px;
-        margin-bottom: 13px;
-      }
-      &__text {
-        font-size: 14px;
-        line-height: 1.71;
-      }
+    &__title {
+      font-size: 48px;
+      margin-bottom: 13px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 1.71;
     }
   }
-  @media screen and (min-width: $breakpointDesktopStart) {
-    .advantages {
-      padding: 39px 115px;
+}
+@media screen and (min-width: $breakpointDesktopStart) {
+  .advantages {
+    padding: 39px 115px;
 
-      &__list {
-        gap: 30px;
-      }
+    &__list {
+      gap: 30px;
+    }
 
-      &__item {
-        max-width: 330px;
-        width: calc((100% - 60px) / 3);
-        &:nth-child(1)::before {
-          margin-bottom: 40px;
-        }
-        &:nth-child(2)::before {
-          margin-bottom: 40px;
-        }
-        &:nth-child(3)::before {
-          margin-bottom: 40px;
-        }
+    &__item {
+      max-width: 330px;
+      width: calc((100% - 60px) / 3);
+      &:nth-child(1)::before {
+        margin-bottom: 40px;
       }
-      &__text {
-        padding-right: 30px;
-        font-size: 16px;
-        line-height: 1.75;
+      &:nth-child(2)::before {
+        margin-bottom: 40px;
       }
-      &__title {
-        font-size: 58px;
-        line-height: 1.14;
-        margin-bottom: 15px;
+      &:nth-child(3)::before {
+        margin-bottom: 40px;
       }
+    }
+    &__text {
+      padding-right: 30px;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+    &__title {
+      font-size: 58px;
+      line-height: 1.14;
+      margin-bottom: 15px;
     }
   }
 }

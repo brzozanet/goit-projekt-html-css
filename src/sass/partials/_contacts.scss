@@ -140,6 +140,8 @@
     font-size: 1rem;
     line-height: 1.3125rem;
     cursor: pointer;
+    display: flex;
+    align-content: center;
   }
 
   &__btn-franschise {
@@ -151,6 +153,8 @@
     font-size: 1rem;
     line-height: 1.3125rem;
     cursor: pointer;
+    display: flex;
+    align-content: center;
   }
 
   &__btn-location:hover,
@@ -169,7 +173,21 @@
     transition-duration: $transitionDurationDefault;
     transition-timing-function: $transitionTimingDefault;
   }
+  &__icon-location {
+    fill: none;
+    stroke: $whiteColor;
+    margin-left: 8px;
+  }
+  &__icon-franchise {
+    stroke: $primaryColorRed;
+    fill: none;
+    margin-left: 8px;
+  }
 }
+
+//
+// media
+//
 
 @media (min-width: $breakpointTabletStart) {
   .contacts {
@@ -255,13 +273,29 @@
     &__btn-franschise {
       width: 174px;
     }
+    &__icon-location {
+      margin-left: 13.5px;
+    }
+    &__icon-franchise {
+      margin-left: 13.5px;
+    }
   }
 }
 
 @media (min-width: $breakpointDesktopStart) {
   .contacts {
-    background-image: linear-gradient($whiteColor 102px, $backgroundCOlorLight 102px);
-
+    background-image: url(../images/sectionbg2-1x.png),
+      linear-gradient($whiteColor 102px, $backgroundCOlorLight 102px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/sectionbg2-2x.png),
+        linear-gradient($whiteColor 102px, $backgroundCOlorLight 102px);
+    }
     &__container {
     }
 

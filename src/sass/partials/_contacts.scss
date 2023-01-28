@@ -12,21 +12,20 @@
     display: none;
   }
 
-  &__item {
+  &__list {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-bottom: 54px;
   }
 
-  &__card {
-    max-width: 220px;
+  &__item {
     margin: 0 auto;
+    max-width: 220px;
     background-color: $whiteColor;
     border-radius: $buttonBorderRadius;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     padding: 43px 21px 43px 20px;
-
     transition-property: scale;
     transition-duration: $transitionDurationDefault;
     transition-timing-function: $transitionTimingDefault;
@@ -99,13 +98,13 @@
 
   &__mail {
     font-size: 0.75rem;
-    line-height: 1, 125rem;
+    line-height: 1.125rem;
     color: $descTextColor;
   }
 
   &__tel {
     font-size: 0.75rem;
-    line-height: 1, 125rem;
+    line-height: 1.125rem;
     color: $descTextColor;
   }
 
@@ -114,9 +113,11 @@
   &__tel:focus,
   &__mail:focus {
     color: $buttonHoverColorRed;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
   }
 
-  &__card:hover {
+  &__item:hover {
     scale: 1.05;
   }
 
@@ -138,6 +139,7 @@
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.3125rem;
+    cursor: pointer;
   }
 
   &__btn-franschise {
@@ -148,5 +150,193 @@
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.3125rem;
+    cursor: pointer;
+  }
+
+  &__btn-location:hover,
+  &__btn-location:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+  }
+
+  &__btn-franschise:hover,
+  &__btn-franschise:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    background-color: $buttonHoverColorGray;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+  }
+}
+
+@media (min-width: $breakpointTabletStart) {
+  .contacts {
+    background-image: linear-gradient($whiteColor 78px, $backgroundCOlorLight 78px);
+
+    &__list {
+      width: 768px;
+      margin: auto;
+      flex-direction: row;
+      margin-bottom: 81px;
+      justify-content: center;
+    }
+
+    &__item {
+      margin: 0;
+      padding: 50px 32px 50px 31px;
+    }
+
+    &__name {
+      width: 73px;
+      height: 28px;
+      font-size: 1rem;
+      line-height: 1.875rem;
+      margin-bottom: 30px;
+    }
+    &__name--foodtruck {
+      width: 138px;
+      height: 28px;
+    }
+    &__city {
+      margin-bottom: 14px;
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+    }
+    &__description {
+      margin-bottom: 30px;
+      font-size: 0.875rem;
+      line-height: 1.44rem;
+    }
+
+    &__schedule {
+      margin-bottom: 30px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid $borderColor;
+      border-top: 1px solid $borderColor;
+    }
+
+    &__schedule-item:first-child {
+      margin-bottom: 16px;
+    }
+
+    &__schedule-day {
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+    }
+
+    &__schedule-hour {
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+    }
+
+    &__mail {
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+    }
+
+    &__tel {
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+    }
+
+    &__btn-list {
+      flex-direction: row;
+      gap: 14.5px;
+      padding-bottom: 176px;
+    }
+
+    &__btn-location {
+      width: 191.5px;
+    }
+
+    &__btn-franschise {
+      width: 174px;
+    }
+  }
+}
+
+@media (min-width: $breakpointDesktopStart) {
+  .contacts {
+    background-image: linear-gradient($whiteColor 102px, $backgroundCOlorLight 102px);
+
+    &__container {
+    }
+
+    &__list {
+      width: 1280px;
+      flex-direction: row;
+      margin-bottom: 86px;
+      gap: 31px;
+    }
+
+    &__item {
+      padding: 51px 44px 62px 43px;
+      max-width: 330px;
+    }
+
+    &__name {
+      margin-bottom: 32px;
+    }
+
+    &__city {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      line-height: 1.875rem;
+    }
+
+    &__description {
+      margin-bottom: 32px;
+      font-size: 1rem;
+      line-height: 1.81rem;
+    }
+
+    &__schedule {
+      margin-bottom: 32px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid $borderColor;
+      border-top: 1px solid $borderColor;
+    }
+
+    &__schedule-item:first-child {
+      margin-bottom: 15px;
+    }
+
+    &__schedule-day {
+      font-size: 1rem;
+      line-height: 1.875rem;
+    }
+
+    &__schedule-hour {
+      font-size: 1rem;
+      line-height: 1.875rem;
+    }
+
+    &__mail {
+      font-size: 1rem;
+      line-height: 1.81rem;
+    }
+
+    &__tel {
+      font-size: 1rem;
+      line-height: 1.81rem;
+    }
+
+    &__btn-list {
+      flex-direction: row;
+      gap: 14.5px;
+      padding-bottom: 176px;
+    }
+
+    &__btn-location {
+      width: 198px;
+    }
+
+    &__btn-franschise {
+      width: 180px;
+    }
   }
 }

@@ -50,8 +50,7 @@
     border-radius: 50%;
     transition: $transitionDurationDefault;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: $primaryColorRed;
     }
   }

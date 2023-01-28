@@ -50,8 +50,7 @@
     border-radius: 50%;
     transition: $transitionDurationDefault;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: $primaryColorRed;
     }
   }
@@ -67,6 +66,9 @@
   &__icon {
     color: $whiteColor;
     fill: currentColor;
+    &--padding {
+      padding-right: 0.1rem;
+    }
   }
 
   &__ContactInfo {

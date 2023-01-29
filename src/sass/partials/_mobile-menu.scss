@@ -1,0 +1,110 @@
+.menu__toggle {
+    display: flex;
+    background: $whiteColor;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    margin-left: 291px;
+}
+.menu{
+    position: fixed;
+    display: none;
+    opacity: 0;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: $backgroundColormobile;
+    transform: translateX(-150%) rotate(360deg) scale(0.01);
+    filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+    &.is-open{
+        transform: translateX(0) rotate(0) scale(1);
+        opacity: 1;
+        display: block;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+.menu 
+.toggle__close{
+    position: absolute;
+    top: 23px;
+    right: 28px;
+}
+.toggle__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 14px;
+}
+.icon-close-button{
+    fill: rgba(255, 255, 255, 1);
+    display: inline-block;
+}
+.toggle-buy-now__mobile-menu{
+    width: 209px;
+    height: 44px;
+    margin: 60px 21px 0px;
+    padding: 0%;
+    background: $whiteColor;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    align-items: center;
+    color: $primaryColorRed;
+    border: none;
+    border-radius: 22px;
+}
+.icon-more-btn{
+    stroke: #d41443;
+    fill: none;
+    margin-left: 15.77px;
+}
+.borders__mobile--menu{
+    width: 250px;
+    height: 42px;
+    border-top: 1px solid #E18298;
+    border-bottom: 1px solid #E18298;
+    padding: 0%;
+}
+.mobile__menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 19px;
+    padding: 0%;
+}
+.mobile__menu--link{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    color: $whiteColor;
+    padding-top: 13px;
+    padding-bottom: 11px;
+}
+.padding-link{
+    padding-left: 21px;
+}
+.mobile__menu--link:hover,
+.mobile__menu--link:focus{
+    color: $primaryColorRed;
+}
+@media (min-width: $breakpointTabletStart) {
+    .menu{
+        width: 254px;
+    }
+    .menu
+    .toggle__close{
+        right: 34px;
+    }
+    .toggle-buy-now__mobile-menu{
+        width: 186px;
+        margin: 60px 34px 0px;
+    }
+    .icon-more-btn{
+        margin-left: 14.04px;
+    }
+}

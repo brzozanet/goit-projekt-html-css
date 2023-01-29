@@ -32,6 +32,7 @@ $breakpointDesktopStart: 1280px;
 
 $transitionDurationDefault: 250ms;
 $transitionTimingDefault: cubic-bezier(0.4, 0, 0.2, 1);
+$transitionDefault: all $transitionDurationDefault $transitionTimingDefault;
 
 /* OTHER */
 

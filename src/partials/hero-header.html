@@ -6,29 +6,41 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
-            <a href="#" class="header__link">Home</a>
+            <a href="#" class="header__link header__link--active">Home</a>
+          </li>
+          <li class="header__item">
             <a href="#" class="header__link">About us</a>
+          </li>
+          <li class="header__item">
             <a href="#" class="header__link">How it's made?</a>
+          </li>
+          <li class="header__item">
             <a href="#" class="header__link">Our Products</a>
+          </li>
+          <li class="header__item">
             <a href="#" class="header__link">Contact</a>
           </li>
         </ul>
       </nav>
       <div class="header__buttons">
-        <button class="menu__togle">
+        <button class="menu__toggle">
           <img src="/src/icons/burger.svg" alt="" />
         </button>
-        <button class="header__button wide-btn wide-btn--white">Buy now ></button>
+        <button class="wide-btn wide-btn--white header__buy-btn">
+          Buy now &ThinSpace; &ThinSpace;
+        </button>
       </div>
     </div>
 
     <!-- Header main -->
     <div class="header__main">
       <div class="header__home">
-        <h1 class="header__text">ICE CREAM MADE WITH PASSION</h1>
-        <div class="header__wrapper">
-          <button class="wide-btn wide-btn--red">Products</button>
-          <button class="wide-btn wide-btn--white">How it's made?</button>
+        <h1 class="header__text">
+          ICE CREAM MADE WITH <span class="header__text header__text--pink">PASSION</span>
+        </h1>
+        <div class="header__wrapper header__wrapper--main">
+          <button class="wide-btn wide-btn--red header__btn">Products</button>
+          <button class="wide-btn wide-btn--white header__btn">How it's made?</button>
         </div>
       </div>
       <div class="header__facilites">
@@ -39,8 +51,14 @@
 
     <!-- Header bottom -->
     <div class="header__bottom">
-      <div class="header__wrapper">
-        <img width="188" height="191" src="/src/images/slider-pic5.png" alt="" />
+      <div class="header__wrapper header__wrapper--bottom">
+        <img
+          class="header__slider-pic-first"
+          width="124"
+          height="126"
+          src="/src/images/slider-pic5.png"
+          alt=""
+        />
         <div class="header__info">
           <p class="header__description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -49,7 +67,13 @@
           <button class="round-btn"></button>
         </div>
       </div>
-      <img width="293" height="232" src="/src/images/slider-pic4.png" alt="" />
+      <img
+        class="header__slider-pic-second"
+        width="168"
+        height="133"
+        src="/src/images/slider-pic4.png"
+        alt=""
+      />
     </div>
   </div>
 </header>

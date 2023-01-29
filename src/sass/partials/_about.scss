@@ -1,0 +1,197 @@
+.about {
+  background-color: $backgroundColorLight;
+  padding-top: 125px;
+  padding-bottom: 39px;
+  background-image: url(/src/images/splash.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 95%;
+
+  &__header {
+    font-family: $headerFont;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    padding: 0px 40px 26px;
+
+    &-first {
+      font-size: 18px;
+      line-height: 1.16;
+      color: $primaryColorRose;
+      margin-bottom: 15px;
+    }
+    &-second {
+      padding-top: 15px;
+      font-size: 34px;
+      line-height: 1.14;
+      color: $primaryColorRed;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  &__picture {
+    padding-bottom: 46px;
+  }
+
+  &__paragraph {
+    font-family: $paragraphFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+
+    &-first {
+      padding: 0px 30px 47px;
+    }
+    &-second {
+      color: $descTextColor;
+      padding: 0px 30px;
+    }
+    &-second:nth-child(1) {
+      display: block;
+      padding: 17px 0px;
+    }
+  }
+
+  &__btn-read-more {
+    @extend %wide-btn;
+    @extend %wide-btn--white;
+    width: 176px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+  }
+
+  &__btn-icon {
+    margin-left: 13.5px;
+    stroke: $primaryColorRed;
+    fill: none;
+  }
+  &__btn-read-more:hover,
+  &__btn-read-more:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about {
+    background-image: url(/src/images/splash@3x.png);
+  }
+}
+
+@media (min-width: $breakpointTabletStart) {
+  .about {
+    padding-top: 130px;
+    padding-bottom: 0px;
+    background-image: none;
+
+    &__header {
+      font-family: $headerFont;
+      font-style: normal;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 400;
+      padding-bottom: 50px;
+
+      &-first {
+        font-size: 26px;
+      }
+      &-second {
+        padding-top: 15px;
+        font-size: 48px;
+      }
+    }
+    &__picture {
+      max-width: 340px;
+    }
+    &__paragraph {
+      font-family: $paragraphFont;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      padding: 0px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+      &-first {
+        padding-bottom: 47px;
+      }
+      &-second {
+        color: $descTextColor;
+      }
+      &-second:nth-child(1) {
+        display: block;
+        padding: 17px 0px 62px;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpointDesktopStart) {
+  .about {
+    background-image: url(/src/images/splash@3x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    &__header {
+      font-family: $headerFont;
+      font-style: normal;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 400;
+
+      &-first {
+        font-size: 30px;
+        line-height: 1.16;
+        color: $primaryColorRose;
+        margin-bottom: 15px;
+      }
+      &-second {
+        padding-top: 15px;
+        font-size: 58px;
+        line-height: 1.14;
+        color: $primaryColorRed;
+        letter-spacing: 0.04em;
+      }
+    }
+    &__picture {
+      max-width: 516px;
+      padding: 0;
+    }
+    &__paragraph {
+      font-family: $paragraphFont;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.75;
+      align-items: flex-start;
+
+      &-first {
+        padding: 50px 74px 35px;
+      }
+      &-second {
+        color: $descTextColor;
+        padding: 0px 74px;
+      }
+      &-second:nth-child(1) {
+        display: block;
+        padding: 17px 0px 45px;
+      }
+    }
+    .container {
+      margin-left: 0 auto;
+      margin-right: 0 auto;
+    }
+  }
+}

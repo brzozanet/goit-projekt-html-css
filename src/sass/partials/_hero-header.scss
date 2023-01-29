@@ -15,6 +15,7 @@
   &__top {
     @include flexcenter(flex, center, space-between);
     margin-bottom: 137px;
+    transition: $transitionDefault;
   }
 
   &__nav {
@@ -48,7 +49,15 @@
   &__btn {
     font-size: 0.5rem;
     line-height: 1.25;
-    padding: 8px 16px;
+    padding: 0.9em 1.8em;
+  }
+
+  &__round-btn {
+    @extend %round-btn;
+    width: 18px;
+    height: 18px;
+    background-size: 18px 18px;
+    margin: 0;
   }
 
   &__buy-btn {
@@ -158,7 +167,7 @@
   }
 
   &__info {
-    margin-top: 0 auto;
+    margin-top: 18%;
     font-size: 0.5rem;
     line-height: 1.5;
     color: $whiteColor;
@@ -201,6 +210,10 @@
       }
     }
 
+    &__buy-btn {
+      display: block;
+    }
+
     &__main {
       margin-bottom: 19px;
       padding-bottom: 0;
@@ -237,6 +250,7 @@
     }
 
     &__home {
+      transition: $transitionDefault;
       margin-left: 69px;
     }
 
@@ -258,6 +272,12 @@
     &__btn {
       font-size: 0.875rem;
       line-height: 1.28;
+    }
+
+    &__round-btn {
+      width: 26px;
+      height: 26px;
+      background-size: 26px 26px;
     }
 
     &__main {

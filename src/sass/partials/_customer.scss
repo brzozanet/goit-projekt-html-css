@@ -31,7 +31,7 @@
     text-align: center;
     text-underline-offset: 6px;
     text-decoration: underline;
-    text-decoration-color: red;
+    text-decoration-color: #e1e1e1;
   }
   &__icon-dots {
     display: flex;
@@ -62,4 +62,40 @@ ul.pagination li a {
   float: left;
   padding: 8px 16px;
   text-decoration: none;
+}
+
+// TABLET
+@media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+  .customer {
+    padding: 0 54px;
+  }
+  .customer__icon-dash {
+    left: 40px;
+    top: 30px;
+  }
+  .customer__name {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+  }
+  .customer__title {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+// DESKOP
+@media screen and (min-width: $breakpointDesktopStart) {
+  .customer {
+    padding: 0 158px;
+  }
+  .customer__icon-dash {
+    left: 50px;
+    top: 32px;
+  }
+  .customer__name {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+  }
 }

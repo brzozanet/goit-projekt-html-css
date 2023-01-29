@@ -44,24 +44,14 @@
     font-size: 14px;
     line-height: 186%;
     text-align: center;
+    margin-bottom: 35px;
   }
 }
-
-ul.pagination {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
+.swiper-pagination-bullet {
+  background: #d9d9d9;
 }
-
-ul.pagination li {
-  display: inline;
-}
-
-ul.pagination li a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
+.swiper-pagination-bullet-active {
+  background: #d31342;
 }
 
 // TABLET

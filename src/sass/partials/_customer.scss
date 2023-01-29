@@ -2,6 +2,7 @@
 @import '../utils/globals';
 
 .customer {
+  margin-bottom: 85px;
   &__image {
     display: flex;
     justify-content: center;
@@ -12,26 +13,48 @@
     margin-bottom: 29px;
   }
   &__description {
-    width: auto;
+    margin-bottom: 30px;
+    padding-top: 43px;
+    padding-bottom: 26px;
+    background-color: $beigeColor;
+  }
+  &__article {
+    max-width: 180px;
+    margin: 0 auto;
     position: relative;
-    background-color: #fafafa;
+    background-image: repeating-linear-gradient(
+      $beigeColor 29px,
+      $secondaryBeigeColor 1px,
+      $beigeColor calc(29px + 1px),
+      $beigeColor calc(29px + 29px + 1px)
+    );
   }
   &__icon-dash {
     position: absolute;
-    left: 61px;
-    top: 28px;
+    left: 15px;
+    top: -15px;
   }
   &__name {
     position: relative;
-    padding: 43px 65px 26px 65px;
-    margin-bottom: 30px;
+    max-width: 150px;
+    margin: 0 auto;
     font-weight: 500;
     font-size: 12px;
     line-height: 32px;
     text-align: center;
-    text-underline-offset: 6px;
-    text-decoration: underline;
-    text-decoration-color: #e1e1e1;
+  }
+  &__dots-list {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  &__dots-item {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: $redColor;
   }
   &__icon-dots {
     display: flex;
@@ -48,25 +71,38 @@
   }
 }
 .swiper-pagination-bullet {
-  background: #d9d9d9;
+  background: $backgroundBeigeColor;
 }
 .swiper-pagination-bullet-active {
-  background: #d31342;
+  background: $redColor;
+  background-image: url('../icons/home1.svg');
+  background-size: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
 }
 
 // TABLET
 @media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
   .customer {
     padding: 0 54px;
+    margin-bottom: 115px;
+  }
+  .customer__description {
+    margin-bottom: 24px;
+  }
+  .customer__article {
+    max-width: 544px;
   }
   .customer__icon-dash {
-    left: 40px;
-    top: 30px;
+    left: 15px;
+    top: -15px;
   }
   .customer__name {
+    max-width: 460px;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 2.14;
     letter-spacing: 0.04em;
+    margin: 0 auto;
   }
   .customer__title {
     font-size: 16px;
@@ -78,14 +114,23 @@
 @media screen and (min-width: $breakpointDesktopStart) {
   .customer {
     padding: 0 158px;
+    margin-bottom: 130px;
+  }
+  .customer__description {
+    margin-bottom: 15px;
+  }
+  .customer__article {
+    max-width: 822px;
   }
   .customer__icon-dash {
-    left: 50px;
-    top: 32px;
+    left: -5px;
+    top: -15px;
   }
   .customer__name {
+    max-width: 750px;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.04em;
+    margin: 0 auto;
   }
 }

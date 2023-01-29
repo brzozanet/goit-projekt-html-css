@@ -55,8 +55,8 @@
   }
 
   &__btn-read-more {
-    @extend %wide-btn;
-    @extend %wide-btn--white;
+    @extend %wide-btn !optional;
+    @extend %wide-btn--white !optional;
     width: 176px;
     height: 44px;
     font-weight: 700;

@@ -1,15 +1,11 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
-
-// Style dla pliku z przykładem HTML fragmentu
-@import './example';
-
 @import './utils/vars';
 @import './utils/globals';
 @import './utils/mixins';
 
 @import './partials/button';
-@import './partials/hero-header';
+
+// @import './partials/hero-header';
+@import './partials/products';
+@import './partials/advantages';
 @import './partials/contacts';
+@import './partials/footer';

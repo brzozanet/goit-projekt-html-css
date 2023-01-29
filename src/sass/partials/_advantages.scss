@@ -1,0 +1,133 @@
+.advantages {
+  background-color: $backgroundColorLight;
+  padding: 0 20px;
+
+  &__header {
+    visibility: hidden;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 38px;
+  }
+
+  &__title {
+    font-family: $headerFont;
+    color: $primaryColorRed;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 12px;
+    line-height: 1.67;
+    font-weight: 700;
+  }
+  &__item {
+    max-width: 230px;
+    &:nth-child(1)::before {
+      content: '';
+      display: block;
+      width: 33px;
+      height: 50px;
+      background-size: cover;
+      margin-bottom: 16px;
+      background-image: url('../icons/bucket.png');
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../icons/bucket@2x.png');
+      }
+    }
+    &:nth-child(2)::before {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-size: cover;
+      margin-bottom: 16px;
+      background-image: url('../icons/bucket2.png');
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../icons/bucket2@2x.png');
+      }
+    }
+    &:nth-child(3)::before {
+      content: '';
+      display: block;
+      width: 44px;
+      height: 50px;
+      background-size: cover;
+      margin-bottom: 16px;
+      background-image: url('../icons/lolly.png');
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../icons/lolly@2x.png');
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpointTabletStart) {
+  .advantages {
+    padding: 66px 36px;
+
+    &__list {
+      gap: 60px;
+    }
+    &__item {
+      width: calc((100% - 120px) / 3);
+      gap: 60px;
+      &:nth-child(1)::before {
+        margin-bottom: 36px;
+      }
+      &:nth-child(2)::before {
+        margin-bottom: 36px;
+      }
+      &:nth-child(3)::before {
+        margin-bottom: 36px;
+      }
+    }
+    &__title {
+      font-size: 48px;
+      margin-bottom: 13px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  }
+}
+@media screen and (min-width: $breakpointDesktopStart) {
+  .advantages {
+    padding: 39px 115px;
+
+    &__list {
+      gap: 30px;
+    }
+
+    &__item {
+      max-width: 330px;
+      width: calc((100% - 60px) / 3);
+      &:nth-child(1)::before {
+        margin-bottom: 40px;
+      }
+      &:nth-child(2)::before {
+        margin-bottom: 40px;
+      }
+      &:nth-child(3)::before {
+        margin-bottom: 40px;
+      }
+    }
+    &__text {
+      padding-right: 30px;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+    &__title {
+      font-size: 58px;
+      line-height: 1.14;
+      margin-bottom: 15px;
+    }
+  }
+}

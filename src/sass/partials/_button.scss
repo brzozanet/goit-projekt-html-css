@@ -3,8 +3,7 @@
   font-family: $paragraphFont;
   transition: $transitionDefault;
   border: none;
-  display: flex;
-  align-items: center;
+  @include flexcenter;
   text-align: center;
 
   &:hover,
@@ -33,7 +32,7 @@
     }
   }
 }
-.round-btn {
+%round-btn {
   border: none;
   content: '';
   background: url(../images/arrow-right.png);

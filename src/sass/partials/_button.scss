@@ -1,17 +1,38 @@
-%wide-btn {
-  border-radius: 20px;
+.wide-btn {
+  border-radius: $buttonBorderRadius;
+  font-family: $paragraphFont;
+  transition: $transitionDefault;
   border: none;
   @include flexcenter;
   text-align: center;
+
+  &:hover,
+  &:focus {
+    box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.15);
+  }
+
   &--red {
-    background-color: $primaryColorRed;
-    color: $whiteColor;
+    background-color: #d41443;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      color: $primaryColorRed;
+      background-color: $whiteColor;
+    }
   }
   &--white {
-    background-color: $whiteColor;
-    color: $primaryColorRed;
+    background-color: #fff;
+    color: #d41443;
+
+    &:hover,
+    &:focus {
+      color: $whiteColor;
+      background-color: $primaryColorRed;
+    }
   }
 }
+
 %round-btn {
   border: none;
   content: '';

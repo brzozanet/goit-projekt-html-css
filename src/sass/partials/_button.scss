@@ -1,0 +1,21 @@
+%wide-btn {
+  border-radius: 20px;
+  border: none;
+  @include flexcenter;
+  text-align: center;
+  &--red {
+    background-color: $primaryColorRed;
+    color: $whiteColor;
+  }
+  &--white {
+    background-color: $whiteColor;
+    color: $primaryColorRed;
+  }
+}
+%round-btn {
+  border: none;
+  content: '';
+  background: url(../images/arrow-right.png);
+  width: 40px;
+  height: 40px;
+}

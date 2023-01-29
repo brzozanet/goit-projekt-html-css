@@ -1,0 +1,376 @@
+.contacts {
+  font-family: $paragraphFont;
+  font-weight: 500;
+  background-image: linear-gradient($whiteColor 84px, $backgroundColorLight 84px);
+
+  &__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__title {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 54px;
+  }
+
+  &__item {
+    margin: 0 auto;
+    max-width: 220px;
+    background-color: $whiteColor;
+    border-radius: $buttonBorderRadius;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    padding: 43px 21px 43px 20px;
+    transition-property: scale;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+  }
+
+  &__name {
+    width: 80px;
+    height: 16px;
+    background-color: $secondaryColorCoffee;
+    @include flexcenter;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    font-size: 0.75rem;
+    line-height: 1.375rem;
+    letter-spacing: 0.04em;
+    color: $whiteColor;
+  }
+
+  &__name--foodtruck {
+    background-color: $secondaryColorPistachio;
+    width: 130px;
+  }
+
+  &__city {
+    margin-bottom: 10px;
+    font-size: 0.75rem;
+    line-height: 1.375rem;
+    letter-spacing: 0.04em;
+    color: $blackColor;
+  }
+
+  &__description {
+    margin-bottom: 25px;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    color: $descTextColor;
+  }
+
+  &__schedule {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $borderColor;
+    border-top: 1px solid $borderColor;
+  }
+
+  &__schedule-item {
+  }
+
+  &__schedule-item:first-child {
+    margin-bottom: 10px;
+  }
+
+  &__schedule-day {
+    font-size: 0.75rem;
+    line-height: 1.375rem;
+  }
+
+  &__schedule-hour {
+    font-size: 0.75rem;
+    line-height: 1.375rem;
+    color: $primaryColorRose;
+  }
+
+  &__link-list {
+  }
+
+  &__link-item {
+  }
+
+  &__mail {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    color: $descTextColor;
+  }
+
+  &__tel {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    color: $descTextColor;
+  }
+
+  &__tel:hover,
+  &__mail:hover,
+  &__tel:focus,
+  &__mail:focus {
+    color: $buttonHoverColorRed;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+  }
+
+  &__item:hover {
+    scale: 1.05;
+  }
+
+  &__btn-list {
+    @include flexcenter;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 113px;
+  }
+
+  &__btn-item {
+  }
+
+  &__btn-location {
+    @extend %wide-btn;
+    @extend %wide-btn--red;
+    width: 161px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+  }
+
+  &__btn-franschise {
+    @extend %wide-btn;
+    @extend %wide-btn--white;
+    width: 161px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+  }
+
+  &__btn-location:hover,
+  &__btn-location:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+  }
+
+  &__btn-franschise:hover,
+  &__btn-franschise:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    background-color: $buttonHoverColorGray;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+  }
+  &__icon-location {
+    fill: none;
+    stroke: $whiteColor;
+    margin-left: 8px;
+  }
+  &__icon-franchise {
+    stroke: $primaryColorRed;
+    fill: none;
+    margin-left: 8px;
+  }
+}
+
+//
+// media
+//
+
+@media (min-width: $breakpointTabletStart) {
+  .contacts {
+    background-image: linear-gradient($whiteColor 78px, $backgroundColorLight 78px);
+
+    &__list {
+      width: 768px;
+      margin: auto;
+      flex-direction: row;
+      margin-bottom: 81px;
+      justify-content: center;
+    }
+
+    &__item {
+      margin: 0;
+      padding: 50px 32px 50px 31px;
+    }
+
+    &__name {
+      width: 73px;
+      height: 28px;
+      font-size: 1rem;
+      line-height: 1.875rem;
+      margin-bottom: 30px;
+    }
+    &__name--foodtruck {
+      width: 138px;
+      height: 28px;
+    }
+    &__city {
+      margin-bottom: 14px;
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+    }
+    &__description {
+      margin-bottom: 30px;
+      font-size: 0.875rem;
+      line-height: 1.44rem;
+    }
+
+    &__schedule {
+      margin-bottom: 30px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid $borderColor;
+      border-top: 1px solid $borderColor;
+    }
+
+    &__schedule-item:first-child {
+      margin-bottom: 16px;
+    }
+
+    &__schedule-day {
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+    }
+
+    &__schedule-hour {
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+    }
+
+    &__mail {
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+    }
+
+    &__tel {
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+    }
+
+    &__btn-list {
+      flex-direction: row;
+      gap: 14.5px;
+      padding-bottom: 176px;
+    }
+
+    &__btn-location {
+      width: 191.5px;
+    }
+
+    &__btn-franschise {
+      width: 174px;
+    }
+    &__icon-location {
+      margin-left: 13.5px;
+    }
+    &__icon-franchise {
+      margin-left: 13.5px;
+    }
+  }
+}
+
+@media (min-width: $breakpointDesktopStart) {
+  .contacts {
+    background-image: url(../images/sectionbg2-1x.png),
+      linear-gradient($whiteColor 102px, $backgroundColorLight 102px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/sectionbg2-2x.png),
+        linear-gradient($whiteColor 102px, $backgroundColorLight 102px);
+    }
+    &__container {
+    }
+
+    &__list {
+      width: 1280px;
+      flex-direction: row;
+      margin-bottom: 86px;
+      gap: 31px;
+    }
+
+    &__item {
+      padding: 51px 44px 62px 43px;
+      max-width: 330px;
+    }
+
+    &__name {
+      margin-bottom: 32px;
+    }
+
+    &__city {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      line-height: 1.875rem;
+    }
+
+    &__description {
+      margin-bottom: 32px;
+      font-size: 1rem;
+      line-height: 1.81rem;
+    }
+
+    &__schedule {
+      margin-bottom: 32px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid $borderColor;
+      border-top: 1px solid $borderColor;
+    }
+
+    &__schedule-item:first-child {
+      margin-bottom: 15px;
+    }
+
+    &__schedule-day {
+      font-size: 1rem;
+      line-height: 1.875rem;
+    }
+
+    &__schedule-hour {
+      font-size: 1rem;
+      line-height: 1.875rem;
+    }
+
+    &__mail {
+      font-size: 1rem;
+      line-height: 1.81rem;
+    }
+
+    &__tel {
+      font-size: 1rem;
+      line-height: 1.81rem;
+    }
+
+    &__btn-list {
+      flex-direction: row;
+      gap: 14.5px;
+      padding-bottom: 176px;
+    }
+
+    &__btn-location {
+      width: 198px;
+    }
+
+    &__btn-franschise {
+      width: 180px;
+    }
+  }
+}

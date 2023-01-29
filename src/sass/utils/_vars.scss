@@ -1,0 +1,41 @@
+/* BRAND COLORS */
+
+$primaryColorRed: #d41443;
+$primaryColorRose: #ffa5ba;
+
+$secondaryColorStrawberry: #ffb8ca;
+$secondaryColorCoffee: #f0d1a5;
+$secondaryColorPistachio: #c2e297;
+
+$backgroudColorDark: $secondaryColorStrawberry;
+$backgroundColorLight: #fff5f6;
+
+$buttonHoverColorRed: #c7133e;
+$buttonHoverColorGray: #ecebeb;
+
+$blackColor: #000;
+$whiteColor: #fff;
+
+$descTextColor: #907e82;
+$borderColor: #e1e1e1;
+
+/* FONTS */
+
+$headerFont: 'Titan One';
+$paragraphFont: 'DM Sans';
+
+/* BREAKPONTS */
+
+$breakpointPhoneEnd: 767px;
+$breakpointTabletStart: 768px;
+$breakpointTabletEnd: 1279px;
+$breakpointDesktopStart: 1280px;
+
+/* TRANSITIONS */
+
+$transitionDurationDefault: 250ms;
+$transitionTimingDefault: cubic-bezier(0.4, 0, 0.2, 1);
+
+/* OTHER */
+
+$buttonBorderRadius: 24px;

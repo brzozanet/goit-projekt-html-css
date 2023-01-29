@@ -1,0 +1,21 @@
+.backdrop {
+  position: fixed;
+  min-width: 320px;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 165, 186, 0.5);
+  transition: opacity $transitionDurationDefault $transitionTimingDefault,
+    visibility $transitionDurationDefault $transitionTimingDefault;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all $transitionDurationDefault $transitionTimingDefault;
+}

@@ -57,9 +57,20 @@
     }
   }
 
-  &__btn-read-more {
-    @extend %wide-btn !optional;
-    @extend %wide-btn--white !optional;
+  // &__btn-read-more {
+  //   @extend %wide-btn !optional;
+  //   @extend %wide-btn--white !optional;
+  //   width: 176px;
+  //   height: 44px;
+  //   font-weight: 700;
+  //   font-size: 14px;
+  //   line-height: 1.29;
+  //   cursor: pointer;
+  //   display: flex;
+  //   align-content: center;
+  // }
+
+  &__more-btn {
     width: 176px;
     height: 44px;
     font-weight: 700;
@@ -74,6 +85,11 @@
     margin-left: 13.5px;
     stroke: $primaryColorRed;
     fill: none;
+  }
+
+  &__btn-icon:hover,
+  &__btn-icon:focus {
+    stroke: $whiteColor;
   }
 
   &__btn-read-more:hover,

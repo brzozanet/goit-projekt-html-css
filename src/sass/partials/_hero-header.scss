@@ -173,7 +173,6 @@
     background: transparent;
     border: none;
     transition: $transitionDefault;
-    display: none;
 
     &:hover,
     &:focus {
@@ -330,6 +329,12 @@
       &__bottom {
         margin-left: 31px;
       }
+    }
+  }
+
+  .menu {
+    &__toggle {
+      display: none;
     }
   }
 }

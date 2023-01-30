@@ -1,9 +1,8 @@
 <section class="contacts">
+  <h2 class="contacts__title">Contacts</h2>
   <div class="contacts__container">
-    <h2 class="contacts__title">Contacts</h2>
-
-    <ul class="contacts__item list">
-      <li class="contacts__card">
+    <ul class="contacts__list list">
+      <li class="contacts__item">
         <p class="contacts__name">CAFE</p>
         <h3 class="contacts__city">Chicago</h3>
         <p class="contacts__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
@@ -19,15 +18,15 @@
         </ul>
         <ul class="contacts__link-list list">
           <li class="contacts__link-item">
-            <a class="contacts__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            <a class="contacts__tel" href="tel:+610383766284">+61(0) 383 766 284</a>
           </li>
           <li class="contacts__link-item">
-            <a class="contacts__tel" href="tel:+610383766284">+61(0) 383 766 284</a>
+            <a class="contacts__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
           </li>
         </ul>
       </li>
 
-      <li class="contacts__card">
+      <li class="contacts__item">
         <p class="contacts__name contacts__name--foodtruck">FOODTRUCK</p>
         <h3 class="contacts__city">Los Angeles</h3>
         <p class="contacts__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
@@ -43,15 +42,15 @@
         </ul>
         <ul class="contacts__link-list list">
           <li class="contacts__link-item">
-            <a class="contacts__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            <a class="contacts__tel" href="tel:+610383766284">+61(0) 383 766 284</a>
           </li>
           <li class="contacts__link-item">
-            <a class="contacts__tel" href="tel:+610383766284">+61(0) 383 766 284</a>
+            <a class="contacts__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
           </li>
         </ul>
       </li>
 
-      <li class="contacts__card">
+      <li class="contacts__item">
         <p class="contacts__name">CAFE</p>
         <h3 class="contacts__city">New York</h3>
         <p class="contacts__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
@@ -67,21 +66,31 @@
         </ul>
         <ul class="contacts__link-list list">
           <li class="contacts__link-item">
-            <a class="contacts__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            <a class="contacts__tel" href="tel:+610383766284">+61(0) 383 766 284</a>
           </li>
           <li class="contacts__link-item">
-            <a class="contacts__tel" href="tel:+610383766284">+61(0) 383 766 284</a>
+            <a class="contacts__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
           </li>
         </ul>
       </li>
     </ul>
 
-    <ul>
-      <li>
-        <button type="button">Our Locations</button>
+    <ul class="contacts__btn-list list">
+      <li class="contacts__btn-item">
+        <button class="contacts__btn-location" type="button" data-modal-location-open>
+          Our Locations
+          <svg class="contacts__icon-location" width="10" height="10">
+            <use href="./icons/icons.svg#icon-vector"></use>
+          </svg>
+        </button>
       </li>
-      <li>
-        <button type="button">Franchise</button>
+      <li class="contacts__btn-item">
+        <button class="contacts__btn-franschise" type="button" data-modal-franschise-open>
+          Franchise
+          <svg class="contacts__icon-franchise" width="10" height="10">
+            <use href="./icons/icons.svg#icon-vector"></use>
+          </svg>
+        </button>
       </li>
     </ul>
   </div>

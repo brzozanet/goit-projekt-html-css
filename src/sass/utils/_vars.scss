@@ -5,10 +5,10 @@ $primaryColorRose: #ffa5ba;
 
 $secondaryColorStrawberry: #ffb8ca;
 $secondaryColorCoffee: #f0d1a5;
-$cecondaryColorPistachio: #c2e297;
+$secondaryColorPistachio: #c2e297;
 
 $backgroudColorDark: $secondaryColorStrawberry;
-$backgroundCOlorLight: #fff5f6;
+$backgroundColorLight: #fff5f6;
 
 $buttonHoverColorRed: #c7133e;
 $buttonHoverColorGray: #ecebeb;
@@ -19,6 +19,9 @@ $beigeColor: #fafafa;
 $secondaryBeigeColor: #e1e1e1;
 $backgroundBeigeColor: #d9d9d9;
 $redColor: #d31342;
+
+$descTextColor: #907e82;
+$borderColor: #e1e1e1;
 
 /* FONTS */
 
@@ -36,6 +39,7 @@ $breakpointDesktopStart: 1280px;
 
 $transitionDurationDefault: 250ms;
 $transitionTimingDefault: cubic-bezier(0.4, 0, 0.2, 1);
+$transitionDefault: all $transitionDurationDefault $transitionTimingDefault;
 
 /* OTHER */
 

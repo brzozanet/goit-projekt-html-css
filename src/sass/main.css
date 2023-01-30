@@ -1,32 +1,28 @@
-@charset "UTF-8";
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 1.5;
+/* BRAND COLORS */
+/* FONTS */
+/* BREAKPONTS */
+/* TRANSITIONS */
+/* OTHER */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
   background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
+  font-family: 'DM Sans';
+  color: #000;
 }
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
 }
 
-.example .background {
-  height: 240px;
-  background-image: url("../images/demo.jpg");
-  background-size: cover;
-  background-position: center;
+.list {
+  list-style-type: none;
 }
 
 /* BRAND COLORS */
@@ -41,7 +37,7 @@
 
 body {
   background-color: #fff;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   color: #000;
 }
 
@@ -67,20 +63,21 @@ img {
   border: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
-.wide-btn--red {
+.contacts__btn-location {
   background-color: #d41443;
   color: #fff;
 }
-.wide-btn--white {
+.contacts__btn-franschise {
   background-color: #fff;
   color: #d41443;
 }
 
 .round-btn {
   border: none;
-  content: "";
+  content: '';
   background: url(../images/arrow-right.png);
   width: 40px;
   height: 40px;
@@ -126,7 +123,7 @@ img {
 
 body {
   background-color: #fff;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   color: #000;
 }
 
@@ -182,4 +179,4 @@ ul.pagination li a {
   float: left;
   padding: 8px 16px;
   text-decoration: none;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

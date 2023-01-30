@@ -1,5 +1,7 @@
 @import './utils/vars';
 @import './utils/globals';
+@import './utils/mixins.scss';
+@import './modules/swiper.scss';
 @import './utils/mixins';
 @import './partials/button';
 
@@ -9,6 +11,7 @@
 @import './partials/advantages';
 @import './partials/gallery';
 @import './partials/contacts';
+@import './partials/customer';
 @import './partials/footer';
 
 @import './partials/modal-location';

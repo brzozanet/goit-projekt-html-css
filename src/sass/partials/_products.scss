@@ -1,9 +1,7 @@
 .products {
-  padding-top: 121px;
+  margin-top: 121px;
+  margin-bottom: 98px;
   &__headers {
-    // display: flex;
-    // align-items: center;
-    // flex-direction: column;
     text-transform: uppercase;
     text-align: center;
 
@@ -35,9 +33,11 @@
     align-items: center;
     gap: 130px;
     &-item {
+      max-width: 280px;
       padding-top: 161px;
       border-radius: 24px;
       display: flex;
+      gap: 30px;
       flex-direction: column;
       align-items: center;
       position: relative;
@@ -48,11 +48,11 @@
       width: 249px;
       height: 252px;
       background-size: cover;
+      background-repeat: no-repeat;
       position: absolute;
-      top: -25%;
+      top: 0%;
       left: 50%;
-      transform: translatex(-50%);
-      transform: translateY(-100%);
+      transform: translate(-50%, -45%);
     }
     &-item:first-child {
       background: $secondaryColorStrawberry;
@@ -67,10 +67,9 @@
       height: 252px;
       background-size: cover;
       position: absolute;
-      top: -25%;
+      top: 0%;
       left: 50%;
-      transform: translatex(-50%);
-      transform: translateY(-100%);
+      transform: translate(-50%, -45%);
     }
     &-item:nth-child(3) {
       background: $secondaryColorPistachio;
@@ -82,10 +81,9 @@
       height: 252px;
       background-size: cover;
       position: absolute;
-      top: -25%;
+      top: 0%;
       left: 50%;
-      transform: translatex(-50%);
-      transform: translateY(-100%);
+      transform: translate(-50%, -45%);
     }
     &-item-header {
       font-family: $headerFont;
@@ -108,7 +106,7 @@
       letter-spacing: 0.04em;
       color: #ffffff;
 
-      padding: 0 39px 0 41px;
+      padding: 0 40px;
     }
     &-dot-element {
       border-radius: 50%;
@@ -121,6 +119,50 @@
 }
 .round-btn {
   @extend %round-btn;
-  margin-top: 30px;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .products {
+    margin-bottom: 112px;
+    &__headers {
+      &-first {
+        font-size: 26px;
+      }
+      &-second {
+        font-size: 48px;
+      }
+    }
+    &__list {
+      flex-direction: row;
+      justify-content: center;
+      max-width: 768px;
+      padding: 0 34px;
+      gap: 20px;
+
+      &-item {
+        min-width: 220px;
+        padding-top: 150px;
+      }
+      &-item:first-child:before {
+        width: 220px;
+        height: 226px;
+      }
+      &-item:nth-child(2):before {
+        width: 220px;
+        height: 226px;
+      }
+      &-item:nth-child(3):before {
+        width: 220px;
+        height: 226px;
+      }
+      &-item-desc {
+        padding: 0 11px;
+        line-height: 1.76;
+      }
+    }
+  }
+  .round-btn {
+    margin-top: 10px;
+  }
 }

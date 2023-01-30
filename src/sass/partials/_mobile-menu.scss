@@ -124,3 +124,9 @@
     margin-left: 14.04px;
   }
 }
+
+@media (min-width: $breakpointDesktopStart) {
+  .menu__toggle {
+    display: none;
+  }
+}

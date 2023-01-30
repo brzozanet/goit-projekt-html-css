@@ -136,12 +136,11 @@
     &__list {
       flex-direction: row;
       justify-content: center;
-      max-width: 768px;
       padding: 0 34px;
       gap: 20px;
 
       &-item {
-        min-width: 220px;
+        width: 220px;
         padding-top: 150px;
       }
       &-item:first-child:before {
@@ -166,3 +165,18 @@
     margin-top: 10px;
   }
 }
+// @media screen and (min-width: 1200px) {
+//   .products {
+//     margin-top: 127px;
+//     margin-bottom: 119px;
+//     &__headers {
+//       &-first {
+//         font-size: 30px;
+//         line-height: 1.13;
+//       }
+//       &-second {
+//         font-size: 58px;
+//       }
+//     }
+//   }
+// }

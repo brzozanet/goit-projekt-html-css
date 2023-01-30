@@ -1,12 +1,9 @@
 .products {
-  padding-top: 121px;
+  margin-top: 121px;
+  margin-bottom: 98px;
   &__headers {
-    // display: flex;
-    // align-items: center;
-    // flex-direction: column;
     text-transform: uppercase;
     text-align: center;
-
     &-first {
       text-decoration: none;
       font-family: $headerFont;
@@ -35,9 +32,11 @@
     align-items: center;
     gap: 130px;
     &-item {
+      max-width: 280px;
       padding-top: 161px;
       border-radius: 24px;
       display: flex;
+      gap: 30px;
       flex-direction: column;
       align-items: center;
       position: relative;
@@ -48,11 +47,11 @@
       width: 249px;
       height: 252px;
       background-size: cover;
+      background-repeat: no-repeat;
       position: absolute;
-      top: -25%;
+      top: 0%;
       left: 50%;
-      transform: translatex(-50%);
-      transform: translateY(-100%);
+      transform: translate(-50%, -45%);
     }
     &-item:first-child {
       background: $secondaryColorStrawberry;
@@ -67,10 +66,9 @@
       height: 252px;
       background-size: cover;
       position: absolute;
-      top: -25%;
+      top: 0%;
       left: 50%;
-      transform: translatex(-50%);
-      transform: translateY(-100%);
+      transform: translate(-50%, -45%);
     }
     &-item:nth-child(3) {
       background: $secondaryColorPistachio;
@@ -82,10 +80,9 @@
       height: 252px;
       background-size: cover;
       position: absolute;
-      top: -25%;
+      top: 0%;
       left: 50%;
-      transform: translatex(-50%);
-      transform: translateY(-100%);
+      transform: translate(-50%, -45%);
     }
     &-item-header {
       font-family: $headerFont;
@@ -108,7 +105,7 @@
       letter-spacing: 0.04em;
       color: #ffffff;
 
-      padding: 0 39px 0 41px;
+      padding: 0 40px;
     }
     &-dot-element {
       border-radius: 50%;
@@ -121,6 +118,117 @@
 }
 .round-btn {
   @extend %round-btn;
-  margin-top: 30px;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .products {
+    margin-bottom: 112px;
+    &__headers {
+      &-first {
+        font-size: 26px;
+      }
+      &-second {
+        font-size: 48px;
+        padding-bottom: 152px;
+      }
+    }
+    &__list {
+      flex-direction: row;
+      justify-content: center;
+      padding: 0 34px;
+      gap: 20px;
+
+      &-item {
+        max-width: 220px;
+        padding-top: 152px;
+      }
+      &-item:first-child:before {
+        width: 220px;
+        height: 226px;
+      }
+      &-item:nth-child(2):before {
+        width: 220px;
+        height: 226px;
+      }
+      &-item:nth-child(3):before {
+        width: 220px;
+        height: 226px;
+      }
+      &-item-desc {
+        padding: 0 11px;
+        line-height: 1.76;
+      }
+    }
+  }
+  .round-btn {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products {
+    margin-top: 127px;
+    margin-bottom: 119px;
+    &__headers {
+      &-first {
+        font-size: 30px;
+        line-height: 1.13;
+      }
+      &-second {
+        font-size: 58px;
+        padding-bottom: 259px;
+      }
+    }
+    &__list {
+      gap: 27px;
+      &-item {
+        min-width: 329px;
+        gap: 32px;
+      }
+      &-item:first-child:before {
+        width: 335px;
+        height: 335px;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -66%);
+      }
+      &-item:nth-child(2):before {
+        width: 335px;
+        height: 335px;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -66%);
+      }
+      &-item:nth-child(3):before {
+        width: 335px;
+        height: 335px;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -66%);
+      }
+      &-item-header {
+        font-size: 30px;
+        line-height: 1.13;
+      }
+      &-item-desc {
+        font-size: 16px;
+        line-height: 1.76;
+        padding: 0 44px;
+      }
+    }
+  }
+  .round-btn {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products__list-item:first-child:before {
+    background-image: url('../images/home-pic1@2x.png');
+  }
+  .products__list-item:nth-child(2):before {
+    background-image: url('../images/home-pic2@2x.png');
+  }
+  .products__list-item:nth-child(3):before {
+    background-image: url('../images/home-pic3@2x.png');
+  }
 }

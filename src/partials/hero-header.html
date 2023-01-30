@@ -24,10 +24,13 @@
       </nav>
       <div class="header__buttons">
         <button class="menu__toggle">
-          <img src="/src/icons/burger.svg" alt="" />
+          <img aria-hidden="true" src="/src/icons/burger.svg" alt="icon" />
         </button>
         <button class="wide-btn wide-btn--white header__buy-btn">
-          Buy now &ThinSpace; &ThinSpace;
+          Buy now
+          <svg class="icon-vector icon-vector--red" width="10" height="10">
+            <use href="/src/icons/icons.svg#icon-vector"></use>
+          </svg>
         </button>
       </div>
     </div>

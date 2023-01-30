@@ -14,11 +14,18 @@
   &--red {
     background-color: $primaryColorRed;
     color: $whiteColor;
+    a {
+      color: $whiteColor;
+    }
 
     &:hover,
     &:focus {
       color: $primaryColorRed;
       background-color: $whiteColor;
+
+      a {
+        color: $primaryColorRed;
+      }
 
       & .icon-vector {
         stroke: $primaryColorRed;
@@ -29,10 +36,18 @@
     background-color: $whiteColor;
     color: $primaryColorRed;
 
+    a {
+      color: $primaryColorRed;
+    }
+
     &:hover,
     &:focus {
       color: $whiteColor;
       background-color: $primaryColorRed;
+
+      a {
+        color: $whiteColor;
+      }
 
       & .icon-vector {
         stroke: $whiteColor;

@@ -12,12 +12,14 @@
     margin: auto;
     margin-bottom: 29px;
   }
+
   &__description {
     margin-bottom: 30px;
     padding-top: 43px;
     padding-bottom: 26px;
     background-color: $beigeColor;
   }
+
   &__article {
     max-width: 180px;
     margin: 0 auto;
@@ -29,11 +31,13 @@
       $beigeColor calc(29px + 29px + 1px)
     );
   }
+
   &__icon-dash {
     position: absolute;
     left: 15px;
     top: -15px;
   }
+
   &__name {
     position: relative;
     max-width: 150px;
@@ -43,6 +47,7 @@
     line-height: 32px;
     text-align: center;
   }
+
   &__dots-list {
     display: flex;
     justify-content: center;
@@ -50,18 +55,21 @@
     margin-bottom: 20px;
     gap: 10px;
   }
+
   &__dots-item {
     width: 4px;
     height: 4px;
     border-radius: 50%;
     background-color: $redColor;
   }
+
   &__icon-dots {
     display: flex;
     justify-content: center;
     margin: auto;
     margin-bottom: 20px;
   }
+
   &__title {
     font-weight: 500;
     font-size: 14px;
@@ -70,9 +78,11 @@
     margin-bottom: 35px;
   }
 }
+
 .swiper-pagination-bullet {
   background: $backgroundBeigeColor;
 }
+
 .swiper-pagination-bullet-active {
   background: $redColor;
   background-image: url('../icons/home1.svg');
@@ -87,16 +97,20 @@
     padding: 0 54px;
     margin-bottom: 115px;
   }
+
   .customer__description {
     margin-bottom: 24px;
   }
+
   .customer__article {
     max-width: 544px;
   }
+
   .customer__icon-dash {
     left: 15px;
     top: -15px;
   }
+
   .customer__name {
     max-width: 460px;
     font-size: 14px;
@@ -104,6 +118,7 @@
     letter-spacing: 0.04em;
     margin: 0 auto;
   }
+
   .customer__title {
     font-size: 16px;
     line-height: 30px;
@@ -116,21 +131,29 @@
     padding: 0 158px;
     margin-bottom: 130px;
   }
+
   .customer__description {
     margin-bottom: 15px;
   }
+
   .customer__article {
     max-width: 822px;
   }
+
   .customer__icon-dash {
     left: -5px;
     top: -15px;
   }
+
   .customer__name {
     max-width: 750px;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.04em;
     margin: 0 auto;
+  }
+
+  .customer__title {
+    font-size: 20px;
   }
 }

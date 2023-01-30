@@ -186,15 +186,18 @@
       line-height: 1.875rem;
       margin-bottom: 30px;
     }
+
     &__name--foodtruck {
       width: 138px;
       height: 28px;
     }
+
     &__city {
       margin-bottom: 14px;
       font-size: 0.875rem;
       line-height: 1.625rem;
     }
+
     &__description {
       margin-bottom: 30px;
       font-size: 0.875rem;
@@ -269,6 +272,7 @@
       background-image: url(../images/sectionbg2-2x.png),
         linear-gradient($whiteColor 102px, $backgroundColorLight 102px);
     }
+
     &__container {
     }
 

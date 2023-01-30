@@ -19,6 +19,7 @@
     position: fixed;
     min-width: 320px;
   }
+
   @media (min-width: $breakpointTabletStart) {
     padding: 40px;
     overflow: auto;

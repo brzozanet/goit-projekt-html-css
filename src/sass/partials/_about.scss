@@ -21,6 +21,7 @@
       color: $primaryColorRose;
       margin-bottom: 15px;
     }
+
     &-second {
       padding-top: 15px;
       font-size: 34px;
@@ -44,10 +45,12 @@
     &-first {
       padding: 0px 30px 47px;
     }
+
     &-second {
       color: $descTextColor;
       padding: 0px 30px;
     }
+
     &-second:nth-child(1) {
       display: block;
       padding: 17px 0px;
@@ -72,6 +75,7 @@
     stroke: $primaryColorRed;
     fill: none;
   }
+
   &__btn-read-more:hover,
   &__btn-read-more:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -104,14 +108,17 @@
       &-first {
         font-size: 26px;
       }
+
       &-second {
         padding-top: 15px;
         font-size: 48px;
       }
     }
+
     &__picture {
       max-width: 340px;
     }
+
     &__paragraph {
       font-family: $paragraphFont;
       font-style: normal;
@@ -144,6 +151,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
+
     &__header {
       font-family: $headerFont;
       font-style: normal;
@@ -165,10 +173,12 @@
         letter-spacing: 0.04em;
       }
     }
+
     &__picture {
       max-width: 516px;
       padding: 0;
     }
+
     &__paragraph {
       font-family: $paragraphFont;
       font-style: normal;
@@ -180,15 +190,18 @@
       &-first {
         padding: 50px 74px 35px;
       }
+
       &-second {
         color: $descTextColor;
         padding: 0px 74px;
       }
+
       &-second:nth-child(1) {
         display: block;
         padding: 17px 0px 45px;
       }
     }
+
     .container {
       margin-left: 0 auto;
       margin-right: 0 auto;

@@ -14,6 +14,7 @@
   &--red {
     background-color: $primaryColorRed;
     color: $whiteColor;
+
     a {
       color: $whiteColor;
     }
@@ -32,6 +33,7 @@
       }
     }
   }
+
   &--white {
     background-color: $whiteColor;
     color: $primaryColorRed;

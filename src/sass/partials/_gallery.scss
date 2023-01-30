@@ -65,12 +65,12 @@
 
   &__img-box {
     width: 100%;
-    height: 40%;
+    height: 50%;
     display: block;
     margin: 0 auto;
 
     &--big {
-      height: 95%;
+      height: 100%;
       width: 100%;
     }
   }
@@ -99,7 +99,7 @@
     grid-row-end: 3;
     grid-column-end: 3;
     position: relative;
-    bottom: -75%;
+    bottom: -65%;
   }
 
   &__item-3 {
@@ -117,7 +117,7 @@
     grid-row-end: 3;
     grid-column-end: 5;
     position: relative;
-    bottom: -45%;
+    bottom: -40%;
   }
 
   &__item-5 {
@@ -135,7 +135,7 @@
     grid-row-end: 3;
     grid-column-end: 6;
     position: relative;
-    bottom: -75%;
+    bottom: -65%;
   }
 
   &__item-7 {
@@ -151,7 +151,7 @@
     grid-row-end: 3;
     grid-column-end: 7;
     position: relative;
-    top: 60%;
+    top: 50%;
   }
 
   &__item-9 {

@@ -322,6 +322,11 @@
   .menu {
     &__toggle {
       display: none;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.2);
+      }
     }
   }
 }

@@ -8,27 +8,35 @@
 
   &:hover,
   &:focus {
-    box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: $shadowDefault;
   }
 
   &--red {
-    background-color: #d41443;
-    color: #fff;
+    background-color: $primaryColorRed;
+    color: $whiteColor;
 
     &:hover,
     &:focus {
       color: $primaryColorRed;
       background-color: $whiteColor;
+
+      & .icon-vector {
+        stroke: $primaryColorRed;
+      }
     }
   }
   &--white {
-    background-color: #fff;
-    color: #d41443;
+    background-color: $whiteColor;
+    color: $primaryColorRed;
 
     &:hover,
     &:focus {
       color: $whiteColor;
       background-color: $primaryColorRed;
+
+      & .icon-vector {
+        stroke: $whiteColor;
+      }
     }
   }
 }
@@ -39,4 +47,11 @@
   background: url(../images/arrow-right.png);
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+  transition: $transitionDefault;
+
+  &:hover,
+  &:focus {
+    box-shadow: $shadowDefault;
+  }
 }

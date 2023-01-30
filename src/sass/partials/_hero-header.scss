@@ -6,10 +6,10 @@
     max-width: $breakpointPhoneEnd;
     margin: auto;
     padding: 6px 20px 0px 20px;
-    background-image: url(/src/images/slider-pic7.png), url(/src/images/ellipse.png);
-    background-size: 171px 410px, 346px 344px;
+    background-image: url(/src/images/slider-pic7.png), url(/src/images/ellipse-cut.png);
+    background-size: 171px 410px, 284px 344px;
     background-repeat: no-repeat;
-    background-position: 75% bottom, 90% 45%;
+    background-position: calc(100% - 32px) bottom, right 45%;
   }
 
   &__top {
@@ -68,18 +68,6 @@
     padding: 10px 37px;
     font-weight: 700;
     line-height: 1.31;
-
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url(/src/icons/vector.svg);
-      background-position: center;
-      width: 6;
-      height: 10;
-      top: 53%;
-      right: 34px;
-      transform: translateY(-53%);
-    }
   }
 
   &__buttons {
@@ -187,13 +175,15 @@
   }
 }
 
+//Tablet
 @media (min-width: $breakpointTabletStart) {
   .header {
     &__container {
-      max-width: $breakpointTabletEnd;
+      max-width: $breakpointTabletStart;
       padding: 38px 34px 28px 34px;
+      background-image: url(/src/images/slider-pic7.png), url(/src/images/ellipse.png);
       background-size: 143px 336px, 324px 322px;
-      background-position: 65% bottom, 75% 20%;
+      background-position: calc(100% - 247px) bottom, calc(100% - 137px);
     }
 
     &__top {
@@ -243,6 +233,7 @@
       max-width: $breakpointDesktopStart;
       padding: 38px 46px 45px 46px;
       background-size: 236px 557px, 538px 538px;
+      background-position: calc(100% - 450px) bottom, calc(100% - 267px);
     }
 
     &__top {
@@ -332,5 +323,19 @@
     &__toggle {
       display: none;
     }
+  }
+}
+
+.icon-vector {
+  transition: $transitionDefault;
+  fill: none;
+  margin-left: 8px;
+
+  &--red {
+    stroke: $primaryColorRed;
+  }
+
+  &--white {
+    stroke: $whiteColor;
   }
 }

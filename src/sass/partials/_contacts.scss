@@ -156,33 +156,6 @@
     display: flex;
     align-content: center;
   }
-
-  &__btn-location:hover,
-  &__btn-location:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition-duration: $transitionDurationDefault;
-    transition-timing-function: $transitionTimingDefault;
-  }
-
-  &__btn-franschise:hover,
-  &__btn-franschise:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-    background-color: $buttonHoverColorGray;
-    transition-duration: $transitionDurationDefault;
-    transition-timing-function: $transitionTimingDefault;
-  }
-  &__icon-location {
-    fill: none;
-    stroke: $whiteColor;
-    margin-left: 8px;
-  }
-  &__icon-franchise {
-    stroke: $primaryColorRed;
-    fill: none;
-    margin-left: 8px;
-  }
 }
 
 //

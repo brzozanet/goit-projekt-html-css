@@ -11,7 +11,7 @@
       font-family: $headerFont;
       font-style: normal;
       font-weight: 400;
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 1.16;
       color: $primaryColorRose;
     }
@@ -20,7 +20,7 @@
       font-family: $headerFont;
       font-style: normal;
       font-weight: 400;
-      font-size: 34px;
+      font-size: 2.25rem;
       line-height: 1.14;
       letter-spacing: 0.04em;
       color: $primaryColorRed;
@@ -100,7 +100,7 @@
       font-family: $headerFont;
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 1.15;
       text-align: center;
       letter-spacing: 0.04em;
@@ -112,7 +112,7 @@
       font-family: $paragraphFont;
       font-style: normal;
       font-weight: 700;
-      font-size: 14px;
+      font-size: 0.875rem;
       line-height: 1.52;
       text-align: center;
       letter-spacing: 0.04em;
@@ -141,11 +141,11 @@
 
     &__headers {
       &-first {
-        font-size: 26px;
+        font-size: 1.625rem;
       }
 
       &-second {
-        font-size: 48px;
+        font-size: 3rem;
         padding-bottom: 152px;
       }
     }
@@ -195,12 +195,12 @@
 
     &__headers {
       &-first {
-        font-size: 30px;
+        font-size: 1.875rem;
         line-height: 1.13;
       }
 
       &-second {
-        font-size: 58px;
+        font-size: 3.625rem;
         padding-bottom: 259px;
       }
     }
@@ -238,12 +238,12 @@
       }
 
       &-item-header {
-        font-size: 30px;
+        font-size: 1.875rem;
         line-height: 1.13;
       }
 
       &-item-desc {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 1.76;
         padding: 0 44px;
       }

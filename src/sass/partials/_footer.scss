@@ -3,8 +3,11 @@
   margin: auto;
   background-color: $backgroundColorLight;
 
-  &__firstArea {
+    &__firstArea {
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &__firstAreaTitleArea {
@@ -125,10 +128,7 @@
 }
 @media (min-width: $breakpointTabletStart) and (max-width: 1199px) {
   .footer__firstArea {
-    max-width: 48rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    max-width: 48rem; 
   }
 
   .footer__firstAreaTitleArea {
@@ -168,10 +168,7 @@
 
 @media (min-width: 1200px) {
   .footer__firstArea {
-    max-width: 80rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    max-width: 80rem; 
   }
 
   .footer__firstAreaTitleArea {

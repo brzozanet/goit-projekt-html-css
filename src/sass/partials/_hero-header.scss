@@ -170,19 +170,6 @@
   }
 }
 
-.menu {
-  &__toggle {
-    background: transparent;
-    border: none;
-    transition: $transitionDefault;
-
-    &:hover,
-    &:focus {
-      transform: scale(1.25);
-    }
-  }
-}
-
 @media (min-width: $breakpointTabletStart) {
   .header {
     &__container {
@@ -229,12 +216,6 @@
     }
 
     &__bottom {
-      display: flex;
-    }
-  }
-
-  .menu {
-    &__toggle {
       display: flex;
     }
   }
@@ -329,12 +310,6 @@
       &__bottom {
         margin-left: 31px;
       }
-    }
-  }
-
-  .menu {
-    &__toggle {
-      display: none;
     }
   }
 }

@@ -1,6 +1,6 @@
 .advantages {
   background-color: $backgroundColorLight;
-  padding: 0 20px;
+  padding: 0 20px 46px 20px;
 
   &__header {
     visibility: hidden;
@@ -9,7 +9,7 @@
   &__list {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 38px;
   }
 
@@ -17,14 +17,14 @@
     font-family: $headerFont;
     color: $primaryColorRed;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 1.14;
     letter-spacing: 0.04em;
     margin-bottom: 20px;
   }
 
   &__text {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 1.67;
     font-weight: 700;
   }
@@ -79,6 +79,7 @@
     &__list {
       gap: 60px;
       justify-content: center;
+      flex-direction: row;
     }
 
     &__item {
@@ -99,12 +100,12 @@
     }
 
     &__title {
-      font-size: 48px;
+      font-size: 3rem;
       margin-bottom: 13px;
     }
 
     &__text {
-      font-size: 14px;
+      font-size: 0.875rem;
       line-height: 1.71;
     }
   }
@@ -137,12 +138,12 @@
 
     &__text {
       padding-right: 30px;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 1.75;
     }
 
     &__title {
-      font-size: 58px;
+      font-size: 3.625rem;
       line-height: 1.14;
       margin-bottom: 15px;
     }

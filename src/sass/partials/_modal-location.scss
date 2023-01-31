@@ -7,7 +7,7 @@
   max-width: 450px;
   border-radius: 10px;
   width: 100vw;
-  overflow: scroll;
+  overflow: hidden;
   background-color: $backgroundColorLight;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   transition: transform $transitionDurationDefault $transitionTimingDefault;
@@ -55,5 +55,8 @@
     width: 100%;
     max-height: 100%;
     border: 0px;
+    @media (max-width: $breakpointPhoneEnd) {
+      margin-top: 8px;
+    }
   }
 }

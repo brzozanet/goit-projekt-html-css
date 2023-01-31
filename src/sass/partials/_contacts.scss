@@ -72,9 +72,6 @@
     border-top: 1px solid $borderColor;
   }
 
-  &__schedule-item {
-  }
-
   &__schedule-item:first-child {
     margin-bottom: 10px;
   }
@@ -88,12 +85,6 @@
     font-size: 0.75rem;
     line-height: 1.375rem;
     color: $primaryColorRose;
-  }
-
-  &__link-list {
-  }
-
-  &__link-item {
   }
 
   &__mail {
@@ -128,9 +119,6 @@
     padding-bottom: 113px;
   }
 
-  &__btn-item {
-  }
-
   &__btn-location {
     @extend .wide-btn;
     @extend .wide-btn--red;
@@ -157,10 +145,6 @@
     align-content: center;
   }
 }
-
-//
-// media
-//
 
 @media (min-width: $breakpointTabletStart) {
   .contacts {
@@ -260,7 +244,7 @@
 
 @media (min-width: $breakpointDesktopStart) {
   .contacts {
-    background-image: url(../images/sectionbg2-1x.png),
+    background-image: url('../images/sectionbg2-1x.png'),
       linear-gradient($whiteColor 102px, $backgroundColorLight 102px);
     background-repeat: no-repeat;
     background-position: center;
@@ -269,11 +253,8 @@
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/sectionbg2-2x.png),
+      background-image: url('../images/sectionbg2-2x.png'),
         linear-gradient($whiteColor 102px, $backgroundColorLight 102px);
-    }
-
-    &__container {
     }
 
     &__list {

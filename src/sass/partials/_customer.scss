@@ -1,6 +1,3 @@
-@import '../utils/vars';
-@import '../utils/globals';
-
 .customer {
   margin-bottom: 85px;
   &__image {
@@ -91,7 +88,6 @@
   background-repeat: no-repeat;
 }
 
-// TABLET
 @media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
   .customer {
     padding: 0 54px;
@@ -125,7 +121,6 @@
   }
 }
 
-// DESKOP
 @media screen and (min-width: $breakpointDesktopStart) {
   .customer {
     padding: 0 158px;

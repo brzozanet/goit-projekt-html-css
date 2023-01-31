@@ -6,7 +6,7 @@
     max-width: $breakpointPhoneEnd;
     margin: auto;
     padding: 6px 20px 0px 20px;
-    background-image: url(/src/images/slider-pic7.png), url(/src/images/ellipse-cut.png);
+    background-image: url('/src/images/slider-pic7.png'), url('/src/images/ellipse-cut.png');
     background-size: 171px 410px, 284px 344px;
     background-repeat: no-repeat;
     background-position: calc(100% - 32px) bottom, right 45%;
@@ -134,7 +134,7 @@
     &::before {
       position: absolute;
       content: '';
-      background-image: url(/src/images/ellipse-white.png);
+      background-image: url('/src/images/ellipse-white.png');
       background-size: 16px 16px;
       width: 16px;
       height: 16px;
@@ -183,13 +183,12 @@
   }
 }
 
-//Tablet
 @media (min-width: $breakpointTabletStart) {
   .header {
     &__container {
       max-width: $breakpointTabletStart;
       padding: 38px 34px 28px 34px;
-      background-image: url(/src/images/slider-pic7.png), url(/src/images/ellipse.png);
+      background-image: url('/src/images/slider-pic7.png'), url('/src/images/ellipse.png');
       background-size: 143px 336px, 324px 322px;
       background-position: calc(100% - 247px) bottom, calc(100% - 137px);
     }
@@ -241,7 +240,6 @@
   }
 }
 
-//Desktop
 @media (min-width: $breakpointDesktopStart) {
   .header {
     &__container {

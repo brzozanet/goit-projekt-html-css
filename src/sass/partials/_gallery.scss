@@ -14,7 +14,6 @@
 .gallery {
   position: relative;
   margin-bottom: 10%;
-
   background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(255, 245, 246, 1) 50%);
 
   &__grid-absolute {
@@ -22,6 +21,7 @@
     position: relative;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 15px;
     height: 100%;

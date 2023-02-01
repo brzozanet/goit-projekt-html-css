@@ -1,0 +1,207 @@
+.modal-buynow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 450px;
+  border-radius: 10px;
+  width: 100vw;
+  overflow: hidden;
+  background-color: $backgroundColorLight;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  transition: transform $transitionDurationDefault $transitionTimingDefault;
+  transform: translate(-50%, -50%) scale(1);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: transform $transitionDurationDefault $transitionTimingDefault;
+    position: fixed;
+    min-width: 320px;
+  }
+
+  @media (min-width: $breakpointTabletStart) {
+    padding: 40px;
+    overflow: auto;
+    height: auto;
+    max-width: 640px;
+  }
+
+  &__close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    fill: $primaryColorRose;
+    background-color: inherit;
+    @include flexcenter;
+    flex-direction: column;
+    border: none;
+  }
+
+  &__icon {
+    cursor: pointer;
+    transition: stroke $transitionDurationDefault $transitionTimingDefault,
+      transform $transitionDurationDefault $transitionTimingDefault;
+    &:focus,
+    &:hover {
+      fill: $primaryColorRed;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__header {
+    margin: 40px auto 0;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primaryColorRed;
+  }
+
+  &__header-box {
+    display: flex;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    margin: 12px auto;
+    width: 448px;
+  }
+
+  &__box input::placeholder,
+  &__box textarea::placeholder {
+    font-size: 0.75rem;
+    line-height: 1.42;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &__label-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    fill: $secondaryColorStrawberry;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media (max-width: $breakpointPhoneEnd) {
+      max-width: 85%;
+    }
+  }
+
+  &__label-box:focus-within {
+    fill: $buttonHoverColorRed;
+  }
+
+  &__label {
+    position: relative;
+    font-size: 0.75rem;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $descTextColor;
+    margin-bottom: 4px;
+  }
+
+  &__label-input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 11px 12px 11px 42px;
+    color: $descTextColor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__label-input:focus-within {
+    outline: none;
+    border-color: $buttonHoverColorRed;
+  }
+
+  &__input-icons {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 38px;
+    left: 16px;
+    transform: translateY(-50%);
+  }
+
+  &__label-input--textarea {
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+  }
+
+  &__checkbox {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $descTextColor;
+    cursor: pointer;
+    margin-bottom: 30px;
+    @media (max-width: $breakpointPhoneEnd) {
+      max-width: 80%;
+    }
+  }
+
+  &__checkbox-input {
+    display: none;
+  }
+
+  &__checkbox-unchecked {
+    width: 16px;
+    height: 15px;
+    vertical-align: text-bottom;
+    fill: $secondaryColorStrawberry;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__checkbox-checked {
+    top: 5px;
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    vertical-align: text-bottom;
+    fill: $buttonHoverColorRed;
+    opacity: 0;
+    z-index: 99;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__checkbox-input:checked + &__checkbox-checked {
+    opacity: 1;
+  }
+
+  &__checkbox-input:checked ~ &__checkbox-unchecked {
+    opacity: 0;
+  }
+
+  &__checkbox-link {
+    color: $descTextColor;
+    text-decoration: underline;
+  }
+
+  &__button-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    margin-bottom: 40px;
+    padding: 10px 76px;
+    background: $secondaryColorStrawberry;
+    color: $whiteColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+  }
+}

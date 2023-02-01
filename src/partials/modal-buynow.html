@@ -1,0 +1,99 @@
+<div class="backdrop is-hidden" data-modal-buynow>
+  <div class="modal-buynow">
+    <button class="modal-buynow__close" data-modal-buynow-close>
+      <svg class="modal-buynow__icon" width="18" height="18">
+        <use href="./icons/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal-buynow__header-box">
+      <h3 class="modal-buynow__header">Please put your contact details into the form below</h3>
+    </div>
+    <form class="modal-buynow__box">
+      <div class="modal-buynow__label-box">
+        <label class="modal-buynow__label" for="user_name">
+          Name
+          <svg class="modal-buynow__input-icons">
+            <use href="./icons/icons.svg#icon-person"></use>
+          </svg>
+        </label>
+        <input
+          class="modal-buynow__label-input"
+          type="text"
+          name="name"
+          id="user_name"
+          pattern="^[a-zA-Z]+"
+          placeholder="Johny"
+          title="Enter name"
+          required
+        />
+      </div>
+      <div class="modal-buynow__label-box">
+        <label class="modal-buynow__label" for="user_phone">
+          Phone number
+          <svg class="modal-buynow__input-icons">
+            <use href="./icons/icons.svg#icon-phone"></use>
+          </svg>
+        </label>
+        <input
+          class="modal-buynow__label-input"
+          type="tel"
+          name="phone_number"
+          id="user_phone"
+          pattern="(\+48\d{9})|(\+(?!48)\d+)"
+          placeholder="+48111111111"
+          title="Use international format number (np. +48123456789, +498963648018)"
+          required
+        />
+      </div>
+      <div class="modal-buynow__label-box">
+        <label class="modal-buynow__label" for="user_email">
+          Email
+          <svg class="modal-buynow__input-icons">
+            <use href="./icons/icons.svg#icon-email"></use>
+          </svg>
+        </label>
+        <input
+          class="modal-buynow__label-input"
+          type="email"
+          name="email"
+          id="user_email"
+          placeholder="info@devstudio.com"
+          title="Enter your E-mail"
+          required
+        />
+      </div>
+      <div class="modal-buynow__label-box">
+        <label class="modal-buynow__label" for="user_feedback"> Comment </label>
+        <textarea
+          class="modal-buynow__label-input modal-buynow__label-input--textarea"
+          name="feedback"
+          id="user_feedback"
+          rows="5"
+          placeholder="Write something"
+          title="Write something"
+        ></textarea>
+      </div>
+      <label class="modal-buynow__checkbox">
+        <input
+          class="modal-buynow__checkbox-input"
+          type="checkbox"
+          name="regulations"
+          value="regulations"
+          required
+        />
+        <svg class="modal-buynow__checkbox-checked">
+          <use href="./icons/icons.svg#icon-checked"></use>
+        </svg>
+        <svg class="modal-buynow__checkbox-unchecked">
+          <use href="./icons/icons.svg#icon-checkbox"></use>
+        </svg>
+        I hereby declare that I agree to the
+        <a class="modal-buynow__checkbox-link" href="#">Website Terms of Use</a> and to the
+        <a class="modal-buynow__checkbox-link" href="#">Privacy Policy</a>.</label
+      >
+      <div class="modal-buynow__button-box">
+        <button class="modal-buynow__button" type="submit">Wyślij</button>
+      </div>
+    </form>
+  </div>
+</div>

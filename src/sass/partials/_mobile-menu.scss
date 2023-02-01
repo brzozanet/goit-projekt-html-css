@@ -70,10 +70,13 @@
 }
 
 .mobile__menu {
-  display: flex;
-  flex-direction: column;
   margin-top: 19px;
   padding: 0%;
+}
+
+.mobile__menu-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile__menu--link {

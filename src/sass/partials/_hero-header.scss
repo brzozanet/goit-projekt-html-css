@@ -28,6 +28,14 @@
     list-style: none;
   }
 
+  &__item {
+    transition: $transitionDefault;
+    &:hover,
+    &:focus {
+      transform: translate(-1px, -1px);
+    }
+  }
+
   &__link {
     font-family: $paragraphFont;
     text-decoration: none;

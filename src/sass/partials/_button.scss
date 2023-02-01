@@ -9,6 +9,7 @@
   &:hover,
   &:focus {
     box-shadow: $shadowDefault;
+    transform: translate(-1px, -1px);
   }
 
   &--red {
@@ -93,5 +94,6 @@
   &:hover,
   &:focus {
     box-shadow: $shadowDefault;
+    transform: scale(1.1);
   }
 }

@@ -8,13 +8,15 @@
 
 ### [Zobacz online na GitHub Pages >>](https://brzozanet.github.io/goit-projekt-html-css/)
 
-**Strona WebStudio**, firmy zajmującej się projektowaniem i wdrażaniem rozwiązań aplikacji
-intenetowych oraz rozwiązań graficznych. Zawiera trzy główne działy: _Agencja_, _Portfolio_ oraz
-_Kontakt_. W pełni responsywny projekt powstał w oparciu o strategię _Mobile First_ w celu poprawy
-doświadczeń użytkownika na urządzeniach mobilnych, poprawę pozycjonowania w wynikach wyszukiwania,
-szybsze ładowanie stron, elastyczność i skalowalność oraz minimalizację zbędnych elementów. Z kolei
-zastosowanie preprocesora SASS spowodowało większą zwięzłość i czytelność kodu, możliwość
-wprowadzenia zmiennych oraz obsługi zagnieżdżania oraz modularność.
+**Strona Ice cream made with passion**, producenta lodów rzemieślniczych, wykonana jako SPA
+(_single-page-application_). Zawiera trzy główne działy: _About Us_, _How it's made?_ oraz _Our
+products_ oraz _Contact_. W pełni responsywny projekt powstał w oparciu o strategię _Mobile First_ w
+celu poprawy doświadczeń użytkownika na urządzeniach mobilnych, poprawę pozycjonowania w wynikach
+wyszukiwania, szybsze ładowanie stron, elastyczność i skalowalność oraz minimalizację zbędnych
+elementów. Z kolei zastosowanie preprocesora SASS spowodowało większą zwięzłość i czytelność kodu,
+możliwość wprowadzenia zmiennych oraz obsługi zagnieżdżania oraz modularność. Bundling aplikacji
+wykonany za pomoca Parcel, służącego do automatyzacji procesu budowania i dostarczania plików
+źródłowych (np. JavaScript, CSS, obrazy) do produkcji.
 
 Wykorzystane technologie i rozwiązania:
 
@@ -26,6 +28,7 @@ Wykorzystane technologie i rozwiązania:
 - Flexbox
 - JavaScript
 - GIT & GitHub
+- Parcel
 
 ![Screenshot App](https://raw.githubusercontent.com/brzozanet/goit-projekt-html-css/main/src/images/gh-cover-goit-html-css.png)
 

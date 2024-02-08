@@ -35,5 +35,8 @@ Aby uruchomić wersję developerską:
 
 ```shell
 npm ci
+```
+
+```shell
 npm run dev
 ```

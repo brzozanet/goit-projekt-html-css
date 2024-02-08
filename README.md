@@ -1,6 +1,8 @@
-# WeIce Cream. Made with passion
+# Ice cream made with passion
 
 ## HTML+CSS > Projekt grupowy
+
+## Rola w projekcie: Team Leader, Front-end Developer
 
 ### GoIT fullstack developer course
 
